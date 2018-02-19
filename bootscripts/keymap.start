@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# This file is triggered by the ubs_keymap.start file in /usb_stick_keymap_lookup/ in the TAZ distro (livecd/liveusb).
-# Commands in the /bootscripts folder have priority over the configuration commands placed in /etc/local.d
+# This file is triggered by the keymap_lookup_on_usb_drives.start file in /etc/local.d/ in the TAZ distro (livecd/liveusb).
+# Commands in the /bootscripts folder have priority over the keymap configuration commands placed in /etc/local.d
 # So, altering these will change your the settings loaded by the TAZ livecd/usb
 
 setxkbmap -layout be
