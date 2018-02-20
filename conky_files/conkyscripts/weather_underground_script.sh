@@ -1,10 +1,11 @@
 #!/usr/bin/python
 #
 # Retrieves and displays weather info from Weather Underground into conky for 7 predetermined cities 
+# Script made by Brian Peregrine, under GPL v3 license.
 #
-# Weather Underground requires a (free APi key (Stratus Plan)
+# Weather Underground requires a (free API key (Stratus Plan)
 # Get your API key via https://www.wunderground.com/weather/api/d/docs?d=index
-# Then, place your API key on a USB stick, at /api_keys/weather_underground_api_key.sh
+# Then, place your API key on a USB stick, at /api_keys/weather_api_key.sh
 # The program will do the rest.
 # If you want info for different cities, edit this script directly; you can get the weather station names
 # via a http://api.wunderground.com/api/Your_Key/geolookup/q/countrycode/city_name.json request
@@ -26,7 +27,7 @@
 #
 # Program code :
 # Retrieve weather underground API key
-import $/api_keys/weather_underground_api_key.sh ?
+import ~/api_keys/weather__api_key.sh
 
 # Do the "conditions" info request for Shanghai with the imported API key, and store the data temporarily
 import urllib2
