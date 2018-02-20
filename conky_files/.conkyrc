@@ -52,14 +52,11 @@ color1 Dark Sea Green
 color2 Dark Orange
 
 # Text alignment, other possible values are commented
-alignment top_right
-#alignment top_left
-#alignment bottom_left
-#alignment bottom_right
+alignment middle_middle
 
 # Gap between borders of screen and text
-gap_x 24
-gap_y 48
+#gap_x
+#gap_y
 
 # Subtract file system buffers from used memory?
 no_buffers yes
