@@ -1,11 +1,4 @@
-# /etc/conky/conky.conf: SliTaz Conky default configuration file.
-#
-# For configuration settings, please see:
-# http://conky.sourceforge.net/config_settings.html
-#
-# For values to display, please see:
-# http://conky.sourceforge.net/variables.html
-#
+# this file is called upon by .conkyrc found in /home/tux/ in the "conky-crunchbang_style" package.
 
 # maintain spacing between certain elements (mono fonts)
 use_spacer none
