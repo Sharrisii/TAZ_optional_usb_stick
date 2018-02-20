@@ -153,11 +153,11 @@ ${if_up wlan0}$color2 wlan0 $alignr ${addr wlan0}
 $endif
 
 $color2 CNN world news ${hr 2}
-${execi 300 /etc/conky/CNN_world_RSS_script.sh}
+${execi 300 ~/conky_files/conkyscripts/CNN_world_RSS_script.sh}
 
 $color2 Weather forecasts ${hr 2}
-${execi 300 /etc/conky/weather_underground_script.sh}
+${execi 300 ~/conky_files/conkyscripts/weather_underground_script.sh}
 
 $color2 Currency rates ${hr 2}
-${execi 300 /etc/conky/fixer_io_script.sh}
-${execi 300 /etc/conky/binance_script.sh}
+${execi 300 ~/conky_files/conkyscripts/fixer_io_script.sh}
+${execi 300 ~/conky_files/conkyscripts/coinapi_io_script.sh}
