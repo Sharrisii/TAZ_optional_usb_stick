@@ -1,4 +1,5 @@
-# this file is called upon by .conkyrc found in /home/tux/ in the "conky-crunchbang_style" package.
+# this file (.conkyrc) has priority over et/conky/conky.conf
+# this file is called upon by the .conkyrc found in /home/tux/ in the "conky-crunchbang_style" package.
 
 # maintain spacing between certain elements (mono fonts)
 use_spacer none
