@@ -1,7 +1,8 @@
 #!/usr/bin/python
 #
 # Retrieves and displays weather info from Weather Underground into conky for 7 predetermined cities 
-# Script made by Brian Peregrine, under GPL v3 license.
+# Weather Underground is a registered trademark of The Weather Channel, LLC. both in the United States and internationally. 
+# This script made by Brian Peregrine, under GPL v3 license.
 #
 # Weather Underground requires a (free API key (Stratus Plan)
 # Get your API key via https://www.wunderground.com/weather/api/d/docs?d=index
@@ -9,21 +10,6 @@
 # The program will do the rest.
 # If you want info for different cities, edit this script directly; you can get the weather station names
 # via a http://api.wunderground.com/api/Your_Key/geolookup/q/countrycode/city_name.json request
-#
-#  _    _               _    _                                     _                                                    _ 
-# | |  | |             | |  | |                                   | |                                                  | |
-# | |  | |  ___   __ _ | |_ | |__    ___  _ __   _   _  _ __    __| |  ___  _ __   __ _  _ __   ___   _   _  _ __    __| |
-# | |/\| | / _ \ / _` || __|| '_ \  / _ \| '__| | | | || '_ \  / _` | / _ \| '__| / _` || '__| / _ \ | | | || '_ \  / _` |
-# \  /\  /|  __/| (_| || |_ | | | ||  __/| |    | |_| || | | || (_| ||  __/| |   | (_| || |   | (_) || |_| || | | || (_| |
-#  \/  \/  \___| \__,_| \__||_| |_| \___||_|     \__,_||_| |_| \__,_| \___||_|    \__, ||_|    \___/  \__,_||_| |_| \__,_|
-#                                                                                  __/ |                                  
-#                                                                                 |___/                                   
-#
-# Weather Underground is a registered trademark of The Weather Channel, LLC. both in the United States and internationally. 
-# The Weather Underground Logo is a trademark of Weather Underground, LLC.
-# Official logo's can be found at https://www.wunderground.com/logos/index.asp ;
-# The logo above is made using an ASCII Art generator (http://patorjk.com/software/taag/ ; font: Doom)
-#
 #
 # Program code :
 # Retrieve weather underground API key
