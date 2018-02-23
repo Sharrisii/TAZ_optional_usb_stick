@@ -81,32 +81,12 @@ if_up_strictness link
 #
 
 TEXT
-${color2}SYSTEM ${hr}
+$color2 Currency rates ${hr 2}
+${execi 300 ~/conky_files/conkyscripts/fixer_io_script.sh}
+${execi 300 ~/conky_files/conkyscripts/coinapi_io_script.sh}
 
-#$desktop_name
-$color  Slitaz release $alignr$color1${pre_exec awk '{printf "%s" $0}' /etc/slitaz-release}
-$color  Kernel $alignr$color1$sysname $kernel $machine
-$color  Hostname $alignr$color1$nodename
-$color  Uptime $alignr$color1$uptime
-${if_existing /sys/class/power_supply/BAT0}$color  Battery $alignr$color1${battery BAT0} ${battery_bar BAT0}$endif\
-${if_existing /sys/class/power_supply/BAT1}$color  Battery 2 $alignr$color1${battery BAT1} ${battery_bar BAT1}$endif
+$color2 Weather forecasts ${hr 2}
+${execi 300 ~/conky_files/conkyscripts/weather_underground_script.sh}
 
-${color2}RESOURCES ${hr}
-
-# CPU0 is the total usage for all CPUs
-$color  CPU $alignr$color1${cpu CPU0}% ${cpubar CPU0}
-#$color1  ${cpugraph CPU0 $color $color1}
-${if_existing /boot}$color  RAM $alignr$color1$memmax $membar\
-${else}$color  RAM $alignr$color1${fs_size /} ${fs_bar /}$endif
-${if_mounted swap}$color  Swap $swapperc%$alignr$color1$swap/$swapmax
-${else}$color  Swap $alignr$color1 Disabled$endif
-$color  Disk / $alignr$color1${fs_size /} ${fs_bar /}
-${if_mounted /home}$color  Disk /home $alignr$color1${fs_size /home} ${fs_bar /home}${endif}
-
-${color2}PROCESSING ${hr}
-
-$color  Name  ${goto 100}   PID ${goto 160} CPU%  $alignr MEM% $color1
-  ${top name 1} ${goto 100} ${top pid 1} ${goto 160} ${top cpu 1} $alignr ${top mem 1}
-  ${top name 2} ${goto 100} ${top pid 2} ${goto 160} ${top cpu 2} $alignr ${top mem 2}
-  ${top name 3} ${goto 100} ${top pid 3} ${goto 160} ${top cpu 3} $alignr ${top mem 3}
-  ${top name 4} ${goto 100} ${top pid 4} ${goto 160} ${top cpu 4} $alignr ${top mem 4}
+$color2 CNN world news ${hr 2}
+${execi 300 ~/conky_files/conkyscripts/CNN_world_RSS_script.sh}
