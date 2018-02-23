@@ -14,25 +14,28 @@ output value recall (echo ?) = [API_key_coinapi]
 [timestamp_today]] = [clock.year]-[clock.month]-[clock.day]T[clock.hour]:[clock.minute]:[clock.second].0000000Z
 [timestamp_yesterday] = [clock.year]-[clock.month]-([clock.day]-1)T[clock.hour]:[clock.minute]:[clock.second].0000000Z
 
-# Do the "current exchangerate" info request for Bitcoin (XBT), with the imported API key, and store the data temporarily
+# Do the "current exchangerate" info request for Bitcoin (XBT), with the imported API key, and store the output data 
+# temporarily under the name "[currency_rate_today_xbteur]"
 import urllib2
 import json
-f = urllib2.urlopen('/v1/exchangerate/{asset1}/{asset2}?time={time} endpoint.') 
+f = urllib2.urlopen(https://rest.coinapi.io/v1/exchangerate/XBT/EUR?apikey=[API_key_coinapi]?time=[timestamp_today]') 
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string) 
 
-# Do the "historical exchangerate" info request for Bitcoin (XBT), with the imported API key, and store the data temporarily
-clock day - 1 day = yesterday
-make yesterday's date into a timestamp
-import timestamp into the historical exchangerate request url and do the request
-store output value under the name "currency_rate_yesterday"
+# Do the "historical exchangerate" info request for Bitcoin (XBT), with the imported API key, and store the output data 
+# temporarily under the name "[currency_rate_yesterday_xbteur]"
+import urllib2
+import json
+f = urllib2.urlopen(https://rest.coinapi.io/v1/exchangerate/XBT/EUR?apikey=[API_key_coinapi]?time=[timestamp_yesterday]') 
+json_string = f.read().replace("'",'"').replace('u"','"')
+parsed_json = json.loads(json_string) 
 
-Calculate the increase of the currency rate compared to yesterday's rate 
-currency rate_increase_percent_compared_to_yesterdays_rate = (rate today - rate yesterday ) / rate yesterday = difference in %
-compared to yesterday's rate
+# Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
+# under the name "[xbteur_rate_increase_percent_compared_to_yesterdays_rate]"
+[xbteur_rate_increase_percent_compared_to_yesterdays_rate] = ( [currency_rate_today_xbteur] - [currency_rate_yesterday_xbteur] ) / [currency_rate_yesterday_xbteur]
 
 # Display the info
-print "currency_name: currency_rate_today (currency rate_increase_percent_compared_to_yesterdays_rate %)"
+print "XBTEUR: [currency_rate_today_xbteur] ([xbteur_rate_increase_percent_compared_to_yesterdays_rate] %)"
 parsed_json ?, parsed_json ?)
 f.close()
 
