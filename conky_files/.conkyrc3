@@ -1,6 +1,6 @@
 # this file is called upon by the conky_startup_delay_and_usb_conf_check.start found in etc/local.d/ 
 # this file is for the left panel
-# this panel shows all openbox keybinds; courtesy of ohnonot (https://crunchbang.org/forums/viewtopic.php?id=29997 )
+# this panel shows all openbox keybinds
 
 # maintain spacing between certain elements (mono fonts)
 use_spacer none
@@ -82,3 +82,5 @@ if_up_strictness link
 #
 
 TEXT
+$color2 CNN world news ${hr 2}
+${execi 300 ~/conky_files/conkyscripts/show_openbox_keybinds_list.sh}
