@@ -1,4 +1,5 @@
 # this file is called upon by the conky_startup_delay_and_usb_conf_check.start found in etc/local.d/ 
+# this file is for the middle panel
 
 # maintain spacing between certain elements (mono fonts)
 use_spacer none
