@@ -21,6 +21,7 @@ import json
 f = urllib2.urlopen(https://rest.coinapi.io/v1/exchangerate/XBT/EUR?apikey=[API_key_coinapi]?time=[timestamp_today]') 
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string) 
+output value recall (echo?)= [currency_rate_today_xbteur]
 
 # Do the "historical exchangerate" info request for Bitcoin (XBT), with the imported API key, and store the output data 
 # temporarily under the name "[currency_rate_yesterday_xbteur]"
@@ -29,7 +30,8 @@ import json
 f = urllib2.urlopen(https://rest.coinapi.io/v1/exchangerate/XBT/EUR?apikey=[API_key_coinapi]?time=[timestamp_yesterday]') 
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string) 
-
+output value recall (echo?)= [currency_rate_yesterday_xbteur]
+                    
 # Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
 # under the name "[xbteur_rate_increase_percent_compared_to_yesterdays_rate]"
 [xbteur_rate_increase_percent_compared_to_yesterdays_rate] = ( [currency_rate_today_xbteur] - [currency_rate_yesterday_xbteur] ) / [currency_rate_yesterday_xbteur]
