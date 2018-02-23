@@ -1,2 +1,139 @@
 # this file is called upon by the conky_startup_delay_and_usb_conf_check.start found in etc/local.d/ 
 # this file is for the left panel
+# this panel shows all openbox keybinds; courtesy of ohnonot (https://crunchbang.org/forums/viewtopic.php?id=29997 )
+
+# maintain spacing between certain elements (mono fonts)
+use_spacer none
+
+# set to yes if you want conky to be forked in the background
+background no
+
+# Xft font when Xft is enabled
+use_xft yes
+xftfont Liberation Sans-9
+
+# Text alpha when using Xft
+xftalpha 1
+
+# Update interval in seconds
+update_interval 2.0
+update_interval_on_battery 5.0
+
+# Do not create own window; just use desktop
+own_window no
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# Minimum size of text area
+minimum_size 250 5
+
+# Draw shades?
+draw_shades no
+
+# Draw outlines?
+draw_outline no # amplifies text
+
+# Draw borders around text
+draw_borders no
+
+# Stippled borders?
+stippled_borders 0
+
+# border margins
+border_outer_margin 5
+
+# border width
+border_width 0
+
+# Default colors and also border colors
+default_color Dark Gray
+default_shade_color Black
+default_outline_color Dark Gray
+color1 Dark Sea Green
+color2 Dark Orange
+
+# Text alignment, other possible values are commented
+alignment middle_middle
+
+# Gap between borders of screen and text
+#gap_x
+#gap_y
+
+# Subtract file system buffers from used memory?
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# default bars size
+default_bar_size 70 6
+default_gauge_size 70 6
+default_graph_size 70 6
+
+# top name width
+top_name_width 10
+
+# how to check an interface for being up (up, link or address)
+if_up_strictness link
+
+#
+# stuff after 'TEXT' will be formatted on screen
+#
+
+TEXT
+#!/bin/bash -u
+
+# script to collect all keybinds from openbox's rc.xml and print 
+# them to a file with tabs and color (escape sequences) inserted
+# http://crunchbang.org/forums/viewtopic.php?id=29997
+# published under the wtfpl license: http://www.wtfpl.net/about/
+
+c=0  # the color modifier. can be between 0 and 5 - just try!
+h=95 # maximum height of output
+w=70 # desired width of output
+
+hxselect 'keybind' <"$HOME/.config/openbox/rc.xml" | hxunent | hxpipe | grep -v -e '^-.n *$' |\
+sed -e 's/urxvt.*-e//g' -e 's/^)keybind/end keybind/g' -e '/^).*/d' -e 's/^-//g' -e '/^(keybind/d' \
+-e 's/Akey CDATA /\n/g' -e 's/A.*ame CDATA //g' -e '/^.action/d' -e 's/\\n *//g' -e '/^(command/d' \
+-e 's/^(//g' -e '/^Execute/d' -e 's/^ *//g' -e '/^menu$/d' -e '/^to$/d' |\
+perl -00 -ple 's/\s*\n\s*/ /g' |\
+sed -e '/^$/d' -e 's/ end keybind$//g' -e 's/ end keybind$/\nend-keychain/g' \
+> /tmp/keybindstmp
+
+line=0
+while read -r x _
+do
+	((line++))
+	dots=''
+	count=${#x}
+		for (( i=13; i >= count ; i-- ))
+		do
+			dots+='.'
+			# if you prefer blank space to dots:
+			# dots+=' ' Unicode Character NO-BREAK SPACE U+00A0 generated with ctrl+shift+u(release u)+a0(enter)
+		done
+		sed -i "${line}s/${x}/[1m[3$((line%3 + c))m${x}/" /tmp/keybindstmp
+		sed -i \
+		"${line}s/${x}\ /${x}[22m[3$((line%3 + c))m${dots}[1m[3$((line%3 + c))m/" \
+		/tmp/keybindstmp
+		# produces a list with lines in 3 alternating colors.
+done < '/tmp/keybindstmp'
+
+cat /tmp/keybindstmp |\
+cut -b 1-$(( w + 28 )) | \
+perl -pe 'chomp if eof' \
+> "$HOME/.config/openbox/keybindlist"
+# cut text to desired width. 
+# $w + 28: width has to add up including escape characters
+# chomp if eof: cuts the last newline + thus saves 1 line output space
+rm /tmp/keybindstmp
+
+# now create a file with a geometry string
+echo -n "${w}x" > "$HOME/.config/openbox/keybindlistgeom"
+if (( line > h ))
+then
+	echo -n "$h" >> "$HOME/.config/openbox/keybindlistgeom"
+else
+	echo -n "$line" >> "$HOME/.config/openbox/keybindlistgeom"
+fi
