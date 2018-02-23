@@ -82,5 +82,5 @@ if_up_strictness link
 #
 
 TEXT
-$color2 CNN world news ${hr 2}
+$color2 Openbox keybinds ${hr 2}
 ${execi 300 ~/conky_files/conkyscripts/show_openbox_keybinds_list.sh}
