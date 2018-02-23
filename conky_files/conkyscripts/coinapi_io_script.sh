@@ -2,10 +2,17 @@
 #
 # Retrieves and displays cryptocurrency rates info from coinapi.io
 # Script made by Brian Peregrine, under GPL v3 license.
+# Docs for coinapi are at https://docs.coinapi.io/
 #
 # Program code:
-# Retrieve coinapi.io API key
+# Retrieve coinapi.io API key and store temporarily under the name "[API_key_coinapi]"
 import ~/api_keys/cryptocurrency_rates_api_key.sh
+output value recall (echo ?) = [API_key_coinapi]
+
+# Define additional parameters
+#timestamp format example: 2018-02-23T15:45:56.0000000Z
+[timestamp_today]] = [clock.year]-[clock.month]-[clock.day]T[clock.hour]:[clock.minute]:[clock.second].0000000Z
+[timestamp_yesterday] = [clock.year]-[clock.month]-([clock.day]-1)T[clock.hour]:[clock.minute]:[clock.second].0000000Z
 
 # Do the "current exchangerate" info request for Bitcoin (XBT), with the imported API key, and store the data temporarily
 import urllib2
