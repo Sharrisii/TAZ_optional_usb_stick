@@ -21,21 +21,21 @@ timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 el
 
 #------------------------------------------ CNYEUR ------------------------------------------
 # Do the "current exchangerate" info request for CNY, and store the output data 
-# temporarily under the name "[currency_rate_today_cnyeur]"
+# temporarily under the name "currency_rate_today_cnyeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=CNY?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_cnyeur = parsed_json['rates']['CNY']
 
 # Do the "historical exchangerate" info request for CNY, and store the output data 
-# temporarily under the name "[currency_rate_today_cnyeur]"
+# temporarily under the name "currency_rate_today_cnyeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=CNY?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_cnyeur = parsed_json['rates']['CNY']
 
 # Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
-# under the name "[cnyeur_rate_increase_percent_compared_to_yesterdays_rate]"
+# under the name "cnyeur_rate_increase_percent_compared_to_yesterdays_rate"
 cnyeur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_cnyeur - currency_rate_yesterday_cnyeur ) / currency_rate_yesterday_cnyeur
 
 # Display the info
@@ -44,21 +44,21 @@ f.close()
 
 #------------------------------------------ INREUR ------------------------------------------
 # Do the "current exchangerate" info request for INR, and store the output data 
-# temporarily under the name "[currency_rate_today_inreur]"
+# temporarily under the name "currency_rate_today_inreur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=INR?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_inreur = parsed_json['rates']['INR']
 
 # Do the "historical exchangerate" info request for INR, and store the output data 
-# temporarily under the name "[currency_rate_today_inreur]"
+# temporarily under the name "currency_rate_today_inreur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=INR?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_inreur = parsed_json['rates']['INR']
 
 # Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
-# under the name "[inreur_rate_increase_percent_compared_to_yesterdays_rate]"
+# under the name "inreur_rate_increase_percent_compared_to_yesterdays_rate"
 inreur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_inreur - currency_rate_yesterday_inreur ) / currency_rate_yesterday_inreur
 
 # Display the info
@@ -67,21 +67,21 @@ f.close()
 
 #------------------------------------------ USDEUR ------------------------------------------
 # Do the "current exchangerate" info request for USD, and store the output data 
-# temporarily under the name "[currency_rate_today_usdeur]"
+# temporarily under the name "currency_rate_today_usdeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=USD?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_usdeur = parsed_json['rates']['USD']
 
 # Do the "historical exchangerate" info request for USD, and store the output data 
-# temporarily under the name "[currency_rate_today_usdeur]"
+# temporarily under the name "currency_rate_today_usdeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=USD?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_usdeur = parsed_json['rates']['USD']
 
 # Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
-# under the name "[usdeur_rate_increase_percent_compared_to_yesterdays_rate]"
+# under the name "usdeur_rate_increase_percent_compared_to_yesterdays_rate"
 usdeur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_usdeur - currency_rate_yesterday_usdeur ) / currency_rate_yesterday_usdeur
 
 # Display the info
@@ -90,21 +90,21 @@ f.close()
 
 #------------------------------------------ RUBEUR ------------------------------------------
 # Do the "current exchangerate" info request for RUB, and store the output data 
-# temporarily under the name "[currency_rate_today_rubeur]"
+# temporarily under the name "currency_rate_today_rubeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=RUB?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_rubeur = parsed_json['rates']['RUB']
 
 # Do the "historical exchangerate" info request for RUB, and store the output data 
-# temporarily under the name "[currency_rate_today_rubeur]"
+# temporarily under the name "currency_rate_today_rubeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=RUB?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_rubeur = parsed_json['rates']['RUB']
 
 # Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
-# under the name "[inreur_rate_increase_percent_compared_to_yesterdays_rate]"
+# under the name "rubeur_rate_increase_percent_compared_to_yesterdays_rate"
 rubeur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_rubeur - currency_rate_yesterday_rubeur ) / currency_rate_yesterday_rubeur
 
 # Display the info
@@ -113,21 +113,21 @@ f.close()
 
 #------------------------------------------ MXNEUR ------------------------------------------
 # Do the "current exchangerate" info request for MXN, and store the output data 
-# temporarily under the name "[currency_rate_today_mxneur]"
+# temporarily under the name "currency_rate_today_mxneur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=MXN?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_mxneur = parsed_json['rates']['MXN']
 
 # Do the "historical exchangerate" info request for MXN, and store the output data 
-# temporarily under the name "[currency_rate_today_mxneur]"
+# temporarily under the name "currency_rate_today_mxneur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=MXN?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_mxneur = parsed_json['rates']['MXN']
 
 # Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
-# under the name "[inreur_rate_increase_percent_compared_to_yesterdays_rate]"
+# under the name "inreur_rate_increase_percent_compared_to_yesterdays_rate"
 mxneur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_mxneur - currency_rate_yesterday_mxneur ) / currency_rate_yesterday_mxneur
 
 # Display the info
@@ -136,21 +136,21 @@ f.close()
 
 #------------------------------------------ JPYEUR ------------------------------------------
 # Do the "current exchangerate" info request for JPY, and store the output data 
-# temporarily under the name "[currency_rate_today_jpyeur]"
+# temporarily under the name "currency_rate_today_jpyeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=JPY?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_jpyeur = parsed_json['rates']['JPY']
 
 # Do the "historical exchangerate" info request for JPY, and store the output data 
-# temporarily under the name "[currency_rate_today_jpyeur]"
+# temporarily under the name "currency_rate_today_jpyeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=JPY?base=EUR')
 json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_jpyeur = parsed_json['rates']['JPY']
 
 # Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
-# under the name "[inreur_rate_increase_percent_compared_to_yesterdays_rate]"
+# under the name "jpyeur_rate_increase_percent_compared_to_yesterdays_rate"
 jpyeur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_jpyeur - currency_rate_yesterday_jpyeur ) / currency_rate_yesterday_jpyeur
 
 # Display the info
