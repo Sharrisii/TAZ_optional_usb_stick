@@ -1,6 +1,5 @@
 # this file is called upon by the conky_startup_delay_and_usb_conf_check.start found in etc/local.d/ 
-# this file is for the middle panel
-# this panel shows all openbox keybinds
+# this file is for the top left panel (showing the world news, currency rates, weather info, ...)
 
 # maintain spacing between certain elements (mono fonts)
 use_spacer none
@@ -54,7 +53,7 @@ color1 Dark Sea Green
 color2 Dark Orange
 
 # Text alignment, other possible values are commented
-alignment middle_middle
+alignment top_left
 
 # Gap between borders of screen and text
 #gap_x
@@ -82,12 +81,12 @@ if_up_strictness link
 #
 
 TEXT
+$color2 CNN world news ${hr 2}
+${execi 300 ~/conky_files/conkyscripts/CNN_world_RSS_script.sh}
+
 $color2 Currency rates ${hr 2}
 ${execi 300 ~/conky_files/conkyscripts/fixer_io_script.sh}
 ${execi 300 ~/conky_files/conkyscripts/coinapi_io_script.sh}
 
 $color2 Weather forecasts ${hr 2}
 ${execi 300 ~/conky_files/conkyscripts/weather_underground_script.sh}
-
-$color2 CNN world news ${hr 2}
-${execi 300 ~/conky_files/conkyscripts/CNN_world_RSS_script.sh}
