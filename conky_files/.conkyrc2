@@ -81,12 +81,5 @@ if_up_strictness link
 #
 
 TEXT
-$color2 Currency rates ${hr 2}
-${execi 300 ~/conky_files/conkyscripts/fixer_io_script.sh}
-${execi 300 ~/conky_files/conkyscripts/coinapi_io_script.sh}
-
-$color2 Weather forecasts ${hr 2}
-${execi 300 ~/conky_files/conkyscripts/weather_underground_script.sh}
-
-$color2 CNN world news ${hr 2}
-${execi 300 ~/conky_files/conkyscripts/CNN_world_RSS_script.sh}
+$color2 Openbox keybinds ${hr 2}
+${execi 300 ~/conky_files/conkyscripts/show_openbox_keybinds_list.sh}
