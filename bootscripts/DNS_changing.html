@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Post-installation instructions</title>
+	<title>DNS changing</title>
 	<meta charset="utf-8" />
 	<style type="text/css">
     body {
@@ -39,9 +39,12 @@
 <!-- Start content -->
 <div id="content">
 
-<p>To change your DNS server, open the file "resolv.conf" located in /etc/, with an editor like Geany, Gedit, ...<br />
-	Next, change the 2 IP numbers listed by 2 numbers listed below.<br />
-	Then, lock this file (even to root) to prevent DHCP clients of changing it again.<br />
+<p>To change your DNS server for all your machines, you can simply set it in your modem or router.<br />
+   If this isn't the case, consider upgrading to open-source firmware (OpenWrt, ...).<br />
+   Alternatively, you can set it per machine by:<br />
+   openening the file "resolv.conf" located in /etc/, with an editor like Geany, Gedit, ...<br />
+   then, changing the 2 IP numbers by the numbers listed below<br />
+   then, locking this file (even to root) to prevent DHCP clients of changing it again.<br />
 	Do this by typing "chattr +i /etc/resolv.conf" at the terminal. <br />
 	Note that if you ever need to be able to change it again, just type "chattr -i /etc/resolv.conf"
 </p>
