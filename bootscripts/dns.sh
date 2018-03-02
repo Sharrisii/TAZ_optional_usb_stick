@@ -5,5 +5,5 @@
 # change the firmware to an open-source router firmware (such as OpenWrt, ...)
 
 +chattr -i /etc/resolv.conf
-sed -i 's/???.???.?.?/input_your_new_IP_here/g' resolv.conf
+sed -i 's/([0-9]{1,3}\.){3}[0-9]{1,3}/input_your_new_IP_here/g' /etc/resolv.conf
 +chattr +i /etc/resolv.conf
