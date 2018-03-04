@@ -3,4 +3,4 @@
 # see https://wiki.gentoo.org/wiki/Xorg/Guide#Configuring_the_keyboard
 # and https://wiki.gentoo.org/wiki/Keyboard_layout_switching#Using_setxkbmap
 
-setxkbmap -layout be
+setxkbmap -layout be-latin1
