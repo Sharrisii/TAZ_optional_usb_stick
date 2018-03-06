@@ -19,7 +19,6 @@ output value recall (echo ?) = [API_key_coinapi]
 import urllib2
 import json
 f = urllib2.urlopen(https://rest.coinapi.io/v1/exchangerate/XBT/EUR?apikey=[API_key_coinapi]?time=[timestamp_today]') 
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string) 
 output value recall (echo?)= [currency_rate_today_xbteur]
 
@@ -28,7 +27,6 @@ output value recall (echo?)= [currency_rate_today_xbteur]
 import urllib2
 import json
 f = urllib2.urlopen(https://rest.coinapi.io/v1/exchangerate/XBT/EUR?apikey=[API_key_coinapi]?time=[timestamp_yesterday]') 
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string) 
 output value recall (echo?)= [currency_rate_yesterday_xbteur]
                     
