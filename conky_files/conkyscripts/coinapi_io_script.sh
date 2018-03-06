@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # Retrieves and displays cryptocurrency rates info from coinapi.io
-# Script made by Brian Peregrine, under GPL v3 license.
+# Script made by Sebastian Luncan, under GPL v3 license.
 # Docs for coinapi are at https://docs.coinapi.io/
 #
 # Program code:
