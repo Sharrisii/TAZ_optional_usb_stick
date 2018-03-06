@@ -2,7 +2,7 @@
 #
 # Retrieves and displays weather info from Weather Underground into conky for 7 predetermined cities 
 # Weather Underground is a registered trademark of The Weather Channel, LLC. both in the United States and internationally. 
-# This script made by Sebastian Luncan, under GPL v3 license.
+# This script made by Brian Peregrine, under GPL v3 license.
 #
 # Weather Underground requires a (free API key (Stratus Plan)
 # Get your API key via https://www.wunderground.com/weather/api/d/docs?d=index
