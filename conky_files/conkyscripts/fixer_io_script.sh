@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # Retrieves and displays currency rates info from fixer.io
-# Script made by Brian Peregrine, under GPL v3 license.
+# Script made by Sebastian Luncan, under GPL v3 license.
 #
 # no api key needed, if a key becomes needed later on, retrieve key from currency_rates_api_key.sh on
 # optional USB stick and store under [API_key_fixer] to be called upon in the HTTP requests
@@ -23,14 +23,12 @@ timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 el
 # Do the "current exchangerate" info request for CNY, and store the output data 
 # temporarily under the name "currency_rate_today_cnyeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=CNY?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_cnyeur = parsed_json['rates']['CNY']
 
 # Do the "historical exchangerate" info request for CNY, and store the output data 
 # temporarily under the name "currency_rate_today_cnyeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=CNY?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_cnyeur = parsed_json['rates']['CNY']
 
@@ -46,14 +44,12 @@ f.close()
 # Do the "current exchangerate" info request for INR, and store the output data 
 # temporarily under the name "currency_rate_today_inreur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=INR?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_inreur = parsed_json['rates']['INR']
 
 # Do the "historical exchangerate" info request for INR, and store the output data 
 # temporarily under the name "currency_rate_today_inreur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=INR?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_inreur = parsed_json['rates']['INR']
 
@@ -69,14 +65,12 @@ f.close()
 # Do the "current exchangerate" info request for USD, and store the output data 
 # temporarily under the name "currency_rate_today_usdeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=USD?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_usdeur = parsed_json['rates']['USD']
 
 # Do the "historical exchangerate" info request for USD, and store the output data 
 # temporarily under the name "currency_rate_today_usdeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=USD?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_usdeur = parsed_json['rates']['USD']
 
@@ -92,14 +86,12 @@ f.close()
 # Do the "current exchangerate" info request for RUB, and store the output data 
 # temporarily under the name "currency_rate_today_rubeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=RUB?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_rubeur = parsed_json['rates']['RUB']
 
 # Do the "historical exchangerate" info request for RUB, and store the output data 
 # temporarily under the name "currency_rate_today_rubeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=RUB?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_rubeur = parsed_json['rates']['RUB']
 
@@ -115,14 +107,12 @@ f.close()
 # Do the "current exchangerate" info request for MXN, and store the output data 
 # temporarily under the name "currency_rate_today_mxneur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=MXN?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_mxneur = parsed_json['rates']['MXN']
 
 # Do the "historical exchangerate" info request for MXN, and store the output data 
 # temporarily under the name "currency_rate_today_mxneur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=MXN?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_mxneur = parsed_json['rates']['MXN']
 
@@ -138,14 +128,12 @@ f.close()
 # Do the "current exchangerate" info request for JPY, and store the output data 
 # temporarily under the name "currency_rate_today_jpyeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=JPY?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_today_jpyeur = parsed_json['rates']['JPY']
 
 # Do the "historical exchangerate" info request for JPY, and store the output data 
 # temporarily under the name "currency_rate_today_jpyeur"
 f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=JPY?base=EUR')
-json_string = f.read().replace("'",'"').replace('u"','"')
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_jpyeur = parsed_json['rates']['JPY']
 
