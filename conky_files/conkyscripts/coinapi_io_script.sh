@@ -9,7 +9,7 @@
 # If you want info for currencies, edit this script directly
 
 # Program code:
-# Retrieve coinapi.io API key and store temporarily under the name "[API_key_coinapi]"
+# Retrieve coinapi.io API key and store temporarily under the name "API_key_coinapi"
 API_key_coinapi = "insert_API_key_here"
 
 # Define additional parameters
