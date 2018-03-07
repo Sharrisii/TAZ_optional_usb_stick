@@ -3,11 +3,14 @@
 # Retrieves and displays cryptocurrency rates info from coinapi.io
 # Script made by Brian Peregrine, under GPL v3 license.
 # Docs for coinapi are at https://docs.coinapi.io/
-#
+
+# Get your API key via https://www.coinapi.io/pricing?apikey
+# Then, place your API key in this script. The program will do the rest.
+# If you want info for currencies, edit this script directly
+
 # Program code:
 # Retrieve coinapi.io API key and store temporarily under the name "[API_key_coinapi]"
-import ~/api_keys/cryptocurrency_rates_api_key.sh
-output value recall (echo ?) = [API_key_coinapi]
+API_key_coinapi = "insert_API_key_here"
 
 # Define additional parameters
 #timestamp format example: 2018-02-23T15:45:56.0000000Z
