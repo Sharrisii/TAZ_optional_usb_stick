@@ -3,9 +3,7 @@
 # Retrieves and displays currency rates info from fixer.io
 # Script made by Brian Peregrine, under GPL v3 license.
 #
-# no api key needed, if a key becomes needed later on, retrieve key from currency_rates_api_key.sh on
-# optional USB stick and store under [API_key_fixer] to be called upon in the HTTP requests
-#
+# no api key needed, if a key becomes needed later on, it can be added later-on
 #
 # Program code:
 import urllib2
