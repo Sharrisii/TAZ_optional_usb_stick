@@ -20,6 +20,7 @@ timestamp_today =     str(str(clock.year) + ('-' if len(str(clock.month)) > 1 el
 clock = datetime.utcnow() - timedelta(days=1)
 timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day)) + 'T' + ('0' if len(str(clock.hour)) < 2 else '') + str(clock.hour) + ':' + ('0' if len(str(clock.minute)) < 2 else '') + str(clock.minute) + ':' + ('0' if len(str(clock.second)) < 2 else '') + str(clock.second) + 'Z'
 
+#------------------------------------------ BTCEUR ------------------------------------------
 # Do the "current exchangerate" info request for Bitcoin (BTC), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_btceur"
 f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/BTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_today)
@@ -27,7 +28,51 @@ json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_btceur = parsed_json['rate']
 
-# Do the "historical exchangerate" info request for Bitcoin (XBT), with the imported API key, and store the output data 
+# Do the "historical exchangerate" info request for Bitcoin (BTC), with the imported API key, and store the output data 
+# temporarily under the name "currency_rate_yesterday_btceur"
+f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/BTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_yesterday)
+parsed_json = json.loads(json_string)
+currency_rate_yesterday_btceur = parsed_json['rate']
+                    
+# Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
+# under the name "[btceur_rate_increase_percent_compared_to_yesterdays_rate]"
+btceur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_btceur - currency_rate_yesterday_btceur ) / currency_rate_yesterday_btceur
+
+# Display the info
+print "BTCEUR: " + str(currency_rate_today_btceur) + "(" + str(btceur_rate_increase_percent_compared_to_yesterdays_rate) + "%)"
+f.close()
+
+#------------------------------------------ Litecoin ------------------------------------------
+# Do the "current exchangerate" info request for Litecoin (LTC), with the imported API key, and store the output data 
+# temporarily under the name "currency_rate_today_ltceur"
+f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/LTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_today)
+json_string = f.read()
+parsed_json = json.loads(json_string)
+currency_rate_today_ltceur = parsed_json['rate']
+
+# Do the "historical exchangerate" info request for Litecoin (LTC), with the imported API key, and store the output data 
+# temporarily under the name "currency_rate_yesterday_ltceur"
+f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/LTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_yesterday)
+parsed_json = json.loads(json_string)
+currency_rate_yesterday_ltceur = parsed_json['rate']
+                    
+# Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
+# under the name "[ltceur_rate_increase_percent_compared_to_yesterdays_rate]"
+ltceur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_ltceur - currency_rate_yesterday_ltceur ) / currency_rate_yesterday_ltceur
+
+# Display the info
+print "LTCEUR: " + str(currency_rate_today_ltceur) + "(" + str(ltceur_rate_increase_percent_compared_to_yesterdays_rate) + "%)"
+f.close()
+
+#------------------------------------------ Ethereum ------------------------------------------
+# Do the "current exchangerate" info request for Bitcoin (BTC), with the imported API key, and store the output data 
+# temporarily under the name "currency_rate_today_btceur"
+f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/BTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_today)
+json_string = f.read()
+parsed_json = json.loads(json_string)
+currency_rate_today_btceur = parsed_json['rate']
+
+# Do the "historical exchangerate" info request for Bitcoin (BTC), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_yesterday_btceur"
 f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/BTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_yesterday)
 json_string = f.read().replace("'",'"').replace('u"','"')
@@ -42,5 +87,25 @@ btceur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today
 print "BTCEUR: " + str(currency_rate_today_btceur) + "(" + str(btceur_rate_increase_percent_compared_to_yesterdays_rate) + "%)"
 f.close()
 
-Do the same requests for:
-Litecoin (LTC), Ripple (XRP), Ethereum (ETH), EOS (EOS), Stratis (STRAT), ...
+#------------------------------------------ Ripple ------------------------------------------
+# Do the "current exchangerate" info request for Bitcoin (BTC), with the imported API key, and store the output data 
+# temporarily under the name "currency_rate_today_btceur"
+f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/BTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_today)
+json_string = f.read()
+parsed_json = json.loads(json_string)
+currency_rate_today_btceur = parsed_json['rate']
+
+# Do the "historical exchangerate" info request for Bitcoin (BTC), with the imported API key, and store the output data 
+# temporarily under the name "currency_rate_yesterday_btceur"
+f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/BTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_yesterday)
+json_string = f.read().replace("'",'"').replace('u"','"')
+parsed_json = json.loads(json_string)
+currency_rate_yesterday_btceur = parsed_json['rate']
+                    
+# Calculate the increase of the currency rate of today compared to yesterday's rate and store the output data temporarily 
+# under the name "[btceur_rate_increase_percent_compared_to_yesterdays_rate]"
+btceur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today_btceur - currency_rate_yesterday_btceur ) / currency_rate_yesterday_btceur
+
+# Display the info
+print "BTCEUR: " + str(currency_rate_today_btceur) + "(" + str(btceur_rate_increase_percent_compared_to_yesterdays_rate) + "%)"
+f.close()
