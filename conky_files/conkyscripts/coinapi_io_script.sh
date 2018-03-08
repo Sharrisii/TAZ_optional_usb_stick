@@ -31,6 +31,7 @@ currency_rate_today_btceur = parsed_json['rate']
 # Do the "historical exchangerate" info request for Bitcoin (BTC), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_yesterday_btceur"
 f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/BTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_yesterday)
+json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_btceur = parsed_json['rate']
                     
@@ -53,6 +54,7 @@ currency_rate_today_ltceur = parsed_json['rate']
 # Do the "historical exchangerate" info request for Litecoin (LTC), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_yesterday_ltceur"
 f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/LTC/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_yesterday)
+json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_ltceur = parsed_json['rate']
                     
@@ -75,6 +77,7 @@ currency_rate_today_etheur = parsed_json['rate']
 # Do the "historical exchangerate" info request for Ethereum (ETH), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_yesterday_etheur"
 f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/ETH/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_yesterday)
+json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_etheur = parsed_json['rate']
                     
@@ -97,6 +100,7 @@ currency_rate_today_xrpeur = parsed_json['rate']
 # Do the "historical exchangerate" info request for Ripple (XRP), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_yesterday_xrpeur"
 f = urllib2.urlopen('https://rest.coinapi.io/v1/exchangerate/XRP/EUR?apikey=' + API_key_coinapi + '&time=' + timestamp_yesterday)
+json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_xrpeur = parsed_json['rate']
                     
