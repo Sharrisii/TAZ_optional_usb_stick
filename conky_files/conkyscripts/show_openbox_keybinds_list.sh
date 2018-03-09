@@ -4,6 +4,7 @@
 # them to a file with tabs and color (escape sequences) inserted
 # script made by ohnonot and published under the wtfpl license: http://www.wtfpl.net/about/
 # http://crunchbang.org/forums/viewtopic.php?id=29997
+# modified by Brian Peregrine to print output directly to screen (for use in conky)
 
 c=0  # the color modifier. can be between 0 and 5 - just try!
 h=95 # maximum height of output
@@ -53,3 +54,6 @@ then
 else
 	echo -n "$line" >> "$HOME/.config/openbox/keybindlistgeom"
 fi
+
+# now output the file to screen
+cat $HOME/.config/openbox/keybindlistgeom
