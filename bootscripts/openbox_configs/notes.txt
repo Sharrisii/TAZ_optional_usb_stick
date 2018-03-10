@@ -1,0 +1,2 @@
+you should be able to see the keybinds list in conky due to the conky_files/conkyscripts/show_openbox_keybinds_list.sh script.
+If you don't like the keybinds, you can alter the files in this folder directly, and again see the updated keybinds list in conky
