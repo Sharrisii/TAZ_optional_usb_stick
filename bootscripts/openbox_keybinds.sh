@@ -4,6 +4,6 @@
 # once the files have been replaced, a command has been added to restart openbox with the new config files
 # see https://linux.die.net/man/1/openbox
 
-cp -f ./openbox_configs/menu.xml /etc/xdg/openbox/menu.xml
-cp -f ./openbox_configs/menu.xml /etc/xdg/openbox/rc.xml
+cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/menu.xml
+cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/rc.xml
 openbox --reconfigure
