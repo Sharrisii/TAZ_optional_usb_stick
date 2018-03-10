@@ -1,5 +1,5 @@
 #!/bin/bash
-# screensaver.sh
+# feh-screensaver.sh
 
 # url: ###
 # This script is licensed under GNU GPL version 2.0 or above
