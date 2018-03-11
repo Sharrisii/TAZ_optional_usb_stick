@@ -17,9 +17,7 @@ Super + f: file manager (PCManFM)
 Super + t: terminal (Sakura)
 Super + e: editor (leafpad)
 Super + w: web browser (Pale Moon)
-Super + a: alsaplayer
 Super + c: source code editor (Geany)
-Super + m: media player (mpv)
 PrtSc: snapshot (xwd)
 Super + x: eXit
 "
