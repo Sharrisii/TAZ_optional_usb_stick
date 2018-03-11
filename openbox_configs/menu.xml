@@ -6,6 +6,13 @@
                 file:///usr/share/openbox/menu.xsd">
 
 	<menu id="root-menu" label="Openbox 3">
+		<item label="System info">
+			<action name="Execute">
+				<command>
+					hardinfo
+				</command>
+			</action>
+		</item>
 		<item label="Package manager">
 			<action name="Execute">
 				<command>
@@ -27,6 +34,48 @@
 				</command>
 			</action>
 		</item>
+		<item label="File transfer protector">
+			<action name="Execute">
+				<command>
+					pypar2
+				</command>
+			</action>
+		</item>
+		<item label="Antivirus">
+			<action name="Execute">
+				<command>
+					clamav
+				</command>
+			</action>
+		</item>
+		<item label="Word Processor">
+			<action name="Execute">
+				<command>
+					abiword
+				</command>
+			</action>
+		</item>
+		<item label="Spreadsheet">
+			<action name="Execute">
+				<command>
+					gnumeric
+				</command>
+			</action>
+		</item>
+		<item label="Presentation">
+			<action name="Execute">
+				<command>
+					impressive
+				</command>
+			</action>
+		</item>
+		<item label="Printer">
+			<action name="Execute">
+				<command>
+					system-config-printer
+				</command>
+			</action>
+		</item>
 		<item label="Audio Player">
 			<action name="Execute">
 				<command>
@@ -41,6 +90,34 @@
 				</command>
 			</action>
 		</item>
+		<item label="Youtube viewer">
+			<action name="Execute">
+				<command>
+					mps-youtube
+				</command>
+			</action>
+		</item>
+		<item label="Instant messenger">
+			<action name="Execute">
+				<command>
+					gajim
+				</command>
+			</action>
+		</item>
+		<item label="VOIP phone">
+			<action name="Execute">
+				<command>
+					linphone
+				</command>
+			</action>
+		</item>
+		<item label="E-mail client">
+			<action name="Execute">
+				<command>
+					claws-mail
+				</command>
+			</action>
+		</item>
 		<item label="Image Viewer">
 			<action name="Execute">
 				<command>
@@ -48,7 +125,14 @@
 				</command>
 			</action>
 		</item>
-		<item label="Image manipulator">
+		<item label="Image manipulator (vector)">
+			<action name="Execute">
+				<command>
+					inkscape
+				</command>
+			</action>
+		</item>
+		<item label="Image manipulator (raster)">
 			<action name="Execute">
 				<command>
 					gimp
