@@ -1,22 +1,25 @@
 you should be able to see the keybinds list in conky due to the conky_files/conkyscripts/show_openbox_keybinds_list.sh script.
-If you don't like the keybinds, you can alter the files in this folder directly, and again see the updated keybinds list in conky
+If you don't like the keybinds, you can alter the files in this folder directly, and again in show_openbox_keybinds_list.sh
 
 Here's a list with the openbox keybinds, found in rc.xml:
 
 Alt + F1: run dialog
 Alt + F2: main menu
 Alt + F3: client menu
-Ctrl + Tab: next desktop (pager)
+Tab + rightarrow = next window
+Tab + leftarrow: previous window
+Ctrl + rightarrow: next desktop (pager)
+Ctrl + Shift + rightarrow: sent item to next desktop
 Ctrl + a: LXappearance
 Ctrl + f: busybox finder
 Ctrl + o: obConf
 Ctrl + Alt + Del: LXTask
+Alt + F4: close window
 Super + f: file manager (PCManFM)
 Super + t: terminal (Sakura)
 Super + e: editor (leafpad)
 Super + w: web browser (Pale Moon)
-Super + a: alsaplayer
 Super + c: source code editor (Geany)
-Super + m: media player (mpv)
-Super + x: eXit
 PrtSc: snapshot (xwd)
+Super + x: eXit
+
