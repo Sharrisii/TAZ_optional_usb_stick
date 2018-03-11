@@ -6,50 +6,42 @@
                 file:///usr/share/openbox/menu.xsd">
 
 	<menu id="root-menu" label="Openbox 3">
-		<item label="Run Program">
+		<item label="Package manager">
 			<action name="Execute">
 				<command>
-					gmrun
+					porthole
 				</command>
 			</action>
 		</item>
-		<separator/>
-		<item label="Terminal">
+		<item label="Partitioner">
 			<action name="Execute">
 				<command>
-					terminator
-				</command>
-			</action>
-		</item>
-		<item label="Web Browser">
-			<action name="Execute">
-				<command>
-					x-www-browser
-				</command>
-			</action>
-		</item>
-		<item label="File Manager">
-			<action name="Execute">
-				<command>
-					thunar
-				</command>
-			</action>
-		</item>
-		<item label="Text Editor">
-			<action name="Execute">
-				<command>
-					geany
+					gparted
 				</command>
 			</action>
 		</item>
 		<item label="Media Player">
 			<action name="Execute">
 				<command>
-					vlc
+					mpv
 				</command>
 			</action>
 		</item>
-		<separator/>
+		<item label="Audio Player">
+			<action name="Execute">
+				<command>
+					alsaplayer
+				</command>
+			</action>
+		</item>
+		<item label="CD/DVD writer">
+			<action name="Execute">
+				<command>
+					xfburn
+				</command>
+			</action>
+		</item>
+		
 		<menu id="accessories" label="Accessories">
 		    <item label="Catfish File Search">
 				<action name="Execute">
