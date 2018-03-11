@@ -210,6 +210,20 @@
         <command>gmrun</command>
       </action>
     </keybind>
+    <keybind key="A-F2">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="A-F3">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+    </keybind>
+
+    
+    
+    
     <keybind key="A-F3">
       <action name="Execute">
         <startupnotify>
@@ -316,16 +330,6 @@
           <name>Logout</name>
         </startupnotify>
         <command>cb-exit</command>
-      </action>
-    </keybind>
-    <keybind key="A-F3">
-      <action name="ShowMenu">
-        <menu>client-list-combined-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-F2">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
       </action>
     </keybind>
     <keybind key="A-C-q">
