@@ -10,8 +10,8 @@ Tab + leftarrow: previous window
 Ctrl + rightarrow: next desktop (pager)
 Ctrl + Shift + rightarrow: sent item to next desktop
 Ctrl + a: LXappearance
-Ctrl + f: busybox finder
-Ctrl + o: obConf
+Ctrl + f: Busybox finder
+Ctrl + o: ObConf
 Ctrl + Alt + Del: LXTask
 Alt + F4: close window
 Super + f: file manager (PCManFM)
