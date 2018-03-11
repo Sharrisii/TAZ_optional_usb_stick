@@ -2,8 +2,7 @@
 
 echo "
 Alt + F1: run dialog
-Alt + F2: main menu
-Alt + F3: client menu
+Alt + F2: menu
 Tab + rightarrow = next window
 Tab + leftarrow: previous window
 Ctrl + rightarrow: next desktop (pager)
