@@ -20,10 +20,10 @@
 				</command>
 			</action>
 		</item>
-		<item label="Media Player">
+		<item label="Archive Manager">
 			<action name="Execute">
 				<command>
-					mpv
+					xarchive
 				</command>
 			</action>
 		</item>
@@ -34,6 +34,27 @@
 				</command>
 			</action>
 		</item>
+		<item label="Media Player">
+			<action name="Execute">
+				<command>
+					mpv
+				</command>
+			</action>
+		</item>
+		<item label="Image Viewer">
+			<action name="Execute">
+				<command>
+					gpicview
+				</command>
+			</action>
+		</item>
+		<item label="Image manipulator">
+			<action name="Execute">
+				<command>
+					gimp
+				</command>
+			</action>
+		</item>
 		<item label="CD/DVD writer">
 			<action name="Execute">
 				<command>
@@ -41,6 +62,7 @@
 				</command>
 			</action>
 		</item>
+		
 		
 		<menu id="accessories" label="Accessories">
 		    <item label="Catfish File Search">
