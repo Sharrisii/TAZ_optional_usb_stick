@@ -23,3 +23,5 @@ Super + c: source code editor (Geany)
 PrtSc: snapshot (xwd)
 Super + x: eXit
 
+Notes: in rc.xml, Ctrl is "C", Alt is "A", Shift is "S", PrtSc is "Print", Super (windows key) is "W", rightarrow is "Right, 
+leftarrow is "Left", downarrow is "Down", uparrow is "Up"
