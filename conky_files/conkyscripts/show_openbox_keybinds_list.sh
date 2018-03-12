@@ -17,7 +17,6 @@ Super + e: editor (leafpad)
 Super + w: web browser (Pale Moon)
 Super + c: source code editor (Geany)
 PrtSc: snapshot (xwd)
-Super + x: eXit
-"""
+Super + x: eXit"""
 
 print(keybindslist)
