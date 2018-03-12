@@ -1,7 +1,6 @@
-#!/bin/bash
+#!/usr/bin/python
 
-echo "
-Alt + F1: run dialog
+keybindslist = """Alt + F1: run dialog
 Alt + F2: menu
 Tab + rightarrow = next window
 Tab + leftarrow: previous window
@@ -19,4 +18,6 @@ Super + w: web browser (Pale Moon)
 Super + c: source code editor (Geany)
 PrtSc: snapshot (xwd)
 Super + x: eXit
-"
+"""
+
+print(keybindslist)
