@@ -83,13 +83,6 @@
 				</command>
 			</action>
 		</item>
-		<item label="Printer">
-			<action name="Execute">
-				<command>
-					system-config-printer
-				</command>
-			</action>
-		</item>
 		<item label="Audio Player">
 			<action name="Execute">
 				<command>
