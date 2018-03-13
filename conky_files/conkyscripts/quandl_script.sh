@@ -2,7 +2,7 @@
 #
 # Retrieves and displays comodity rates info from quandl.com
 # Script made by Brian Peregrine, under GPL v3 license.
-# Docs for quandl are at https://blog.quandl.com/getting-started-with-the-quandl-api
+# Docs for quandl are at https://docs.quandl.com/docs/
 # For a list of what comodity rates are available see https://blog.quandl.com/api-for-commodity-data
 
 # Get your API key via https://www.quandl.com/?modal=register
