@@ -16,10 +16,10 @@ API_key_quandl = "insert_API_key_here"
 # Define additional parameters
 #timestamp format example: 2018-02-23
 from datetime import datetime, timedelta
-clock = datetime.utcnow()
-timestamp_today =     str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day)) + 'T' + ('0' if len(str(clock.hour)) < 2 else '') + str(clock.hour) + ':' + ('0' if len(str(clock.minute)) < 2 else '') + str(clock.minute) + ':' + ('0' if len(str(clock.second)) < 2 else '') + str(clock.second) + 'Z'
-clock = datetime.utcnow() - timedelta(days=1)
-timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day)) + 'T' + ('0' if len(str(clock.hour)) < 2 else '') + str(clock.hour) + ':' + ('0' if len(str(clock.minute)) < 2 else '') + str(clock.minute) + ':' + ('0' if len(str(clock.second)) < 2 else '') + str(clock.second) + 'Z'
+clock = datetime.now()
+timestamp_today = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day))
+clock = datetime.now() - timedelta(days=1)
+timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day))
 
 #------------------------------------------ Gold ------------------------------------------
 # Do the "current exchangerate" info request for gold (WORLDBANK/WLD_GOLD), with the imported API key, and store the output data 
