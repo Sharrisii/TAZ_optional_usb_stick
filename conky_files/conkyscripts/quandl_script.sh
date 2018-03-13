@@ -10,7 +10,7 @@
 # If you want info for currencies, edit this script directly
 
 # Program code:
-# Retrieve coinapi.io API key and store temporarily under the name "API_key_coinapi"
+# Retrieve coinapi.io API key and store temporarily under the name "API_key_quandl"
 API_key_quandl = "insert_API_key_here"
 
 # Define additional parameters
@@ -24,14 +24,14 @@ timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 el
 #------------------------------------------ Gold ------------------------------------------
 # Do the "current exchangerate" info request for gold (WORLDBANK/WLD_GOLD), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_xaueur"
-f = urllib2.urlopen('http://www.quandl.com/api/v3/datasets/WORLDBANK/WLD_GOLD?apikey=' + API_key_quandl + '&time=' + timestamp_today)
+f = urllib2.urlopen('http://www.quandl.com/api/v3/datasets/WORLDBANK/WLD_GOLD?apikey=' + API_key_quandl + '&start_date=' + timestamp_today + '&end_date=' + timestamp_today)
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_xaueur = parsed_json['rate']
 
 # Do the "historical exchangerate" info request for gold (WORLDBANK/WLD_GOLD), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_yesterday_xaueur"
-f = urllib2.urlopen('http://www.quandl.com/api/v3/datasets/WORLDBANK/WLD_GOLD?apikey=' + API_key_quandl + '&time=' + timestamp_yesterday)
+f = urllib2.urlopen('http://www.quandl.com/api/v3/datasets/WORLDBANK/WLD_GOLD?apikey=' + API_key_quandl + '&start_date=' + timestamp_yesterday + '&end_date=' + timestamp_today)
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_xaueur = parsed_json['rate']
@@ -47,14 +47,14 @@ f.close()
 #------------------------------------------ Silver ------------------------------------------
 # Do the "current exchangerate" info request for silver (WORLDBANK/WLD_SILVER), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_xageur"
-f = urllib2.urlopen('http://www.quandl.com/api/v3/datasets/WORLDBANK/WLD_SILVER?apikey' + API_key_quandl + '&time=' + timestamp_today)
+f = urllib2.urlopen('http://www.quandl.com/api/v3/datasets/WORLDBANK/WLD_SILVER?apikey' + API_key_quandl + '&start_date=' + timestamp_today + '&end_date=' + timestamp_today)
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_xageur = parsed_json['rate']
 
 # Do the "historical exchangerate" info request for silver (WORLDBANK/WLD_SILVER), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_yesterday_xageur"
-f = urllib2.urlopen('http://www.quandl.com/api/v3/datasets/WORLDBANK/WLD_SILVER?apikey' + API_key_quandl + '&time=' + timestamp_yesterday)
+f = urllib2.urlopen('http://www.quandl.com/api/v3/datasets/WORLDBANK/WLD_SILVER?apikey' + API_key_quandl + '&start_date=' + timestamp_yesterday + '&end_date=' + timestamp_today)
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_xageur = parsed_json['rate']
