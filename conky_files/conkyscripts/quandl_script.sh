@@ -14,7 +14,7 @@
 API_key_quandl = "insert_API_key_here"
 
 # Define additional parameters
-#timestamp format example: 2018-02-23T15:45:56.0000000Z
+#timestamp format example: 2018-02-23
 from datetime import datetime, timedelta
 clock = datetime.utcnow()
 timestamp_today =     str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day)) + 'T' + ('0' if len(str(clock.hour)) < 2 else '') + str(clock.hour) + ':' + ('0' if len(str(clock.minute)) < 2 else '') + str(clock.minute) + ':' + ('0' if len(str(clock.second)) < 2 else '') + str(clock.second) + 'Z'
