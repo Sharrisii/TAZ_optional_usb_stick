@@ -24,7 +24,7 @@ do
     displays="$displays $id"
 done< <(xvinfo | sed -n 's/^screen #\([0-9]\+\)$/\1/p')
 
-DIR=$( cd "$( ../images/ "$0" )" && pwd)
+DIR="../images"
 delay=$1
 
 checkFullscreen()
