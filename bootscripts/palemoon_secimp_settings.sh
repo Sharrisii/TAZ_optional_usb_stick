@@ -14,7 +14,7 @@ cp Updated_about_config_settings.cfg /opt/palemoon
 cd ../palemoon_secimp_settings/opt/palemoon/defaults/pref/
 cp autoconfig.js /opt/palemoon/defaults/pref/
 
-cd ../palemoon_secimp_settings/opt/palemoon/browser/extensions
+cd ../palemoon_secimp_settings/opt/palemoon/browser/extensions/
 cp  * /opt/palemoon/browser/extensions/
 
 cd /opt/palemoon/browser/searchplugins/
