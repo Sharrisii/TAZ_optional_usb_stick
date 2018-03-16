@@ -10,6 +10,10 @@
 # If you want info for currencies, edit this script directly
 
 # Program code:
+import urllib2
+import json
+import time
+
 # Retrieve coinapi.io API key and store temporarily under the name "API_key_quandl"
 API_key_quandl = "insert_API_key_here"
 
@@ -21,6 +25,7 @@ timestamp_today = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '
 clock = datetime.now() - timedelta(days=1)
 timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day))
 
+while True:
 #------------------------------------------ Gold ------------------------------------------
 # Do the "current exchangerate" info request for gold (WORLDBANK/WLD_GOLD), with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_xaueur"
@@ -66,3 +71,5 @@ xageur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today
 # Display the info
 print "XAGEUR: " + str(currency_rate_today_xageur) + "(" + str(xageur_rate_increase_percent_compared_to_yesterdays_rate) + "%)"
 f.close()
+
+time.sleep(3600)
