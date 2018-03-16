@@ -9,6 +9,8 @@
 # If you want info for currencies, edit this script directly
 
 # Program code:
+import urllib2
+import json
 import time
 
 # Retrieve coinapi.io API key and store temporarily under the name "API_key_coinapi"
