@@ -8,6 +8,7 @@
 # Program code:
 import urllib2
 import json
+import time
 
 # Define additional parameters
 #timestamp format example: 2018-02-23
@@ -17,6 +18,7 @@ timestamp_today = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '
 clock = datetime.now() - timedelta(days=1)
 timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day))
 
+while True:
 #------------------------------------------ CNYEUR ------------------------------------------
 # Do the "current exchangerate" info request for CNY, and store the output data 
 # temporarily under the name "currency_rate_today_cnyeur"
@@ -154,3 +156,5 @@ jpyeur_rate_increase_percent_compared_to_yesterdays_rate = ( currency_rate_today
 # Display the info
 print "JPYEUR: " + str(currency_rate_today_jpyeur) + "(" + str(jpyeur_rate_increase_percent_compared_to_yesterdays_rate) + "%)"
 f.close()
+
+time.sleep(3600)
