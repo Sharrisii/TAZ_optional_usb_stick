@@ -9,6 +9,8 @@
 # If you want info for currencies, edit this script directly
 
 # Program code:
+import time
+
 # Retrieve coinapi.io API key and store temporarily under the name "API_key_coinapi"
 API_key_coinapi = "insert_API_key_here"
 
@@ -20,7 +22,6 @@ timestamp_today =     str(str(clock.year) + ('-' if len(str(clock.month)) > 1 el
 clock = datetime.utcnow() - timedelta(days=1)
 timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 else '-0') + str(clock.month) + ('-' if len(str(clock.day)) > 1 else '-0') + str(clock.day)) + 'T' + ('0' if len(str(clock.hour)) < 2 else '') + str(clock.hour) + ':' + ('0' if len(str(clock.minute)) < 2 else '') + str(clock.minute) + ':' + ('0' if len(str(clock.second)) < 2 else '') + str(clock.second) + 'Z'
 
-import time
 while True:
 #------------------------------------------ BTCEUR ------------------------------------------
 # Do the "current exchangerate" info request for Bitcoin (BTC), with the imported API key, and store the output data 
