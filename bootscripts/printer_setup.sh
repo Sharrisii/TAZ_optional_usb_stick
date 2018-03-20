@@ -11,6 +11,6 @@
 # see https://wiki.gentoo.org/wiki/Printing and https://forums.gentoo.org/viewtopic-t-22291-start-0.html
 
 cp -f ../printer_files/cupsd.conf /etc/cups/cupsd.conf
-cp ../printer_files/*.ppd /usr/share/cups/model/
+cp -f ../printer_files/*.ppd /usr/share/cups/model/
 /etc/init.d/cupsd restart
 systemctl start cups.service
