@@ -1,0 +1,2 @@
+this file should label serial ata drives with "serial_ATA_*" and parallel ata drives with "parallel_ATA_*", 
+in which the * is a number from 1 to 9 and all partitions of a same drive are given a same number
