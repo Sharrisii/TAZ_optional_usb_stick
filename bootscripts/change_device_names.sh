@@ -13,7 +13,7 @@ echo"
 KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="disk",
 ENV{ID_ATA_SATA}!="1", SYMLINK+="disk/by-id/PARALLEL_ATA-$env{ID_PARALLEL}"
 KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="partition",
-ENV{ID_SERIAL}=="?*",
+ENV{ID_PARALLEL}=="?*",
 SYMLINK+="disk/by-id/PARALLEL_ATA-$env{ID_PARALLEL}-part%n"
 
 KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="disk",
@@ -25,13 +25,13 @@ SYMLINK+="disk/by-id/SERIAL_ATA-$env{ID_SERIAL}-part%n"
 KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="disk",
 ENV{ID_BUS}=="usb*", SYMLINK+="disk/by-id/USB-$env{ID_USB}"
 KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="partition",
-ENV{ID_SERIAL}=="?*",
+ENV{ID_USB}=="?*",
 SYMLINK+="disk/by-id/USB-$env{ID_USB}-part%n"
 
 KERNEL=="sr*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="disk",
 ENV{ID_ATA_SATA}!="1", SYMLINK+="disk/by-id/PARALLEL_ATA-$env{ID_PARALLEL}"
 KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="partition",
-ENV{ID_SERIAL}=="?*",
+ENV{ID_PARALLEL}=="?*",
 SYMLINK+="disk/by-id/PARALLEL_ATA-$env{ID_PARALLEL}-part%n"
 
 KERNEL=="sr*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="disk",
@@ -43,7 +43,7 @@ SYMLINK+="disk/by-id/SERIAL_ATA-$env{ID_SERIAL}-part%n"
 KERNEL=="sr*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="disk",
 ENV{ID_BUS}=="usb*", SYMLINK+="disk/by-id/USB-$env{ID_USB}"
 KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="partition",
-ENV{ID_SERIAL}=="?*",
+ENV{ID_USB}=="?*",
 SYMLINK+="disk/by-id/USB-$env{ID_USB}-part%n"
 
 " >> /lib/udev/rules.d/60-persistent-storage.rules
