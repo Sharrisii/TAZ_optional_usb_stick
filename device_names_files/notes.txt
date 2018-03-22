@@ -3,5 +3,6 @@ Sda names are hereby given to partitions of drives that are the 1st drive on the
 sdb names are given to partitions of drives that are the 2nd drive on the cable (so only parallell ATA drives, ...)
 
 Lables have been applied by the change_device_names.sh script to parallel, serial and usb hard disks, as well as serial, 
-parallel and usb opticals. To see them, just do "ls -lR /dev/ | cat "by-label" "
+parallel and usb opticals. To see them, just do "ls -lR /dev/disk " and look at the "/dev/disk/by-label:" section.
+
 Labels given to sd*'s and sr*'s with a same number are hereby partitions belonging to the same drive.
