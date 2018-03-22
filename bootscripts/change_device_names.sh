@@ -7,5 +7,12 @@ cp -f ../device_names_files/.hidden /dev/
 # Copy notes.txt to /dev/
 cp -f ../device_names_files/notes.txt /dev/
 
-# Copy udev rules file that makes udev automatically make labels for hard disks
-cp -f ../device_names_files/harddisk_labelling.rule /etc/udev/rules.d/
+# Append udev rules to /lib/udev/rules.d/60-persistent-storage.rules tho make udev automatically make labels for hard disks
+echo"
+KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="disk",
+ENV{ID_SERIAL}=="?*", SYMLINK+="disk/by-id/SERIAL_ATA-$env{ID_SERIAL}"
+KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="partition",
+ENV{ID_SERIAL}=="?*",
+SYMLINK+="disk/by-id/SERIAL_ATA-$env{ID_SERIAL}-part%n"
+
+" >> /lib/udev/rules.d/60-persistent-storage.rules
