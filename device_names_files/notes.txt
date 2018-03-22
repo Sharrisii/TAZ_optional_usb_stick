@@ -2,5 +2,6 @@ The kernel automatically gives optical drives sr* names, and hard disks sd* name
 Sda names are hereby given to partitions of drives that are the 1st drive on the cable (so both serial and parallel ATA drives, and USB hard disks), 
 sdb names are given to partitions of drives that are the 2nd drive on the cable (so only parallell ATA drives, ...)
 
-Lables have been applied by the change_device_names.sh script. To see them, just do "ls -lR /dev/ | cat "by-label" "
-Labels given to sd*'s with a same number are partitions belonging to the same drive.  
+Lables have been applied by the change_device_names.sh script to parallel, serial and usb hard disks, as well as serial, 
+parallel and usb opticals. To see them, just do "ls -lR /dev/ | cat "by-label" "
+Labels given to sd*'s and sr*'s with a same number are hereby partitions belonging to the same drive.
