@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Hide the /dev/cdrom, and /dev/dvd symlinks to sr0, as well as the unused and empty /dev/disk folder 
-# (normally used by systemd, but that's not installed)
+# Hide the /dev/cdrom, and /dev/dvd symlinks to sr0, as well as the /dev/disk folder
 cp -f ../device_names_files/.hidden /dev/
 
 # Copy notes.txt to /dev/
