@@ -3,12 +3,13 @@
 # Retrieves and displays currency rates info from fixer.io
 # Script made by Brian Peregrine, under GPL v3 license.
 #
-# no api key needed, if a key becomes needed later on, it can be added later-on
-#
 # Program code:
 import urllib2
 import json
 import time
+
+# Retrieve fixer.io API key and store temporarily under the name "API_key_fixer"
+API_key_fixer = "insert_API_key_here"
 
 # Define additional parameters
 #timestamp format example: 2018-02-23
@@ -20,16 +21,16 @@ timestamp_yesterday = str(str(clock.year) + ('-' if len(str(clock.month)) > 1 el
 
 while True:
 #------------------------------------------ CNYEUR ------------------------------------------
-# Do the "current exchangerate" info request for CNY, and store the output data 
+# Do the "current exchangerate" info request for CNY, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_cnyeur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=CNY?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_today + '?symbols=CNY?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_cnyeur = round(1 / parsed_json['rates']['CNY'], 2)
 
-# Do the "historical exchangerate" info request for CNY, and store the output data 
+# Do the "historical exchangerate" info request for CNY, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_cnyeur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=CNY?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_yesterday + '?symbols=CNY?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_cnyeur = round(1 / parsed_json['rates']['CNY'], 2)
@@ -43,16 +44,16 @@ print "CNYEUR: " + str(currency_rate_today_cnyeur) + "(" + str(cnyeur_rate_incre
 f.close()
 
 #------------------------------------------ INREUR ------------------------------------------
-# Do the "current exchangerate" info request for INR, and store the output data 
+# Do the "current exchangerate" info request for INR, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_inreur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=INR?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_today + '?symbols=INR?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_inreur = round(1 / parsed_json['rates']['INR'], 2)
 
-# Do the "historical exchangerate" info request for INR, and store the output data 
+# Do the "historical exchangerate" info request for INR, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_inreur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=INR?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_yesterday + '?symbols=INR?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_inreur = round(1 / parsed_json['rates']['INR'], 2)
@@ -66,16 +67,16 @@ print "INREUR: " + str(currency_rate_today_inreur) + "(" + str(inreur_rate_incre
 f.close()
 
 #------------------------------------------ USDEUR ------------------------------------------
-# Do the "current exchangerate" info request for USD, and store the output data 
+# Do the "current exchangerate" info request for USD, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_usdeur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=USD?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_today + '?symbols=USD?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_usdeur = round(1 / parsed_json['rates']['USD'], 2)
 
-# Do the "historical exchangerate" info request for USD, and store the output data 
+# Do the "historical exchangerate" info request for USD, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_usdeur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=USD?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_yesterday + '?symbols=USD?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_usdeur = round(1 / parsed_json['rates']['USD'], 2)
@@ -89,16 +90,16 @@ print "USDEUR: " + str(currency_rate_today_usdeur) + "(" + str(usdeur_rate_incre
 f.close()
 
 #------------------------------------------ RUBEUR ------------------------------------------
-# Do the "current exchangerate" info request for RUB, and store the output data 
+# Do the "current exchangerate" info request for RUB, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_rubeur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=RUB?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_today + '?symbols=RUB?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_rubeur = round(1 / parsed_json['rates']['RUB'], 2)
 
-# Do the "historical exchangerate" info request for RUB, and store the output data 
+# Do the "historical exchangerate" info request for RUB, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_rubeur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=RUB?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_yesterday + '?symbols=RUB?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_rubeur = round(1 / parsed_json['rates']['RUB'], 2)
@@ -112,16 +113,16 @@ print "RUBEUR: " + str(currency_rate_today_rubeur) + "(" + str(rubeur_rate_incre
 f.close()
 
 #------------------------------------------ MXNEUR ------------------------------------------
-# Do the "current exchangerate" info request for MXN, and store the output data 
+# Do the "current exchangerate" info request for MXN, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_mxneur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=MXN?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_today + '?symbols=MXN?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_mxneur = round(1 / parsed_json['rates']['MXN'], 2)
 
-# Do the "historical exchangerate" info request for MXN, and store the output data 
+# Do the "historical exchangerate" info request for MXN, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_mxneur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=MXN?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_yesterday + '?symbols=MXN?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_mxneur = round(1 / parsed_json['rates']['MXN'], 2)
@@ -135,16 +136,16 @@ print "MXNEUR: " + str(currency_rate_today_mxneur) + "(" + str(mxneur_rate_incre
 f.close()
 
 #------------------------------------------ JPYEUR ------------------------------------------
-# Do the "current exchangerate" info request for JPY, and store the output data 
+# Do the "current exchangerate" info request for JPY, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_jpyeur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_today + '?symbols=JPY?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_today + '?symbols=JPY?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_today_jpyeur = round(1 / parsed_json['rates']['JPY'], 2)
 
-# Do the "historical exchangerate" info request for JPY, and store the output data 
+# Do the "historical exchangerate" info request for JPY, with the imported API key, and store the output data 
 # temporarily under the name "currency_rate_today_jpyeur"
-f = urllib2.urlopen('http://api.fixer.io/' + timestamp_yesterday + '?symbols=JPY?base=EUR')
+f = urllib2.urlopen('http://api.fixer.io?access_key:' + API_key_fixer + timestamp_yesterday + '?symbols=JPY?base=EUR')
 json_string = f.read()
 parsed_json = json.loads(json_string)
 currency_rate_yesterday_jpyeur = round(1 / parsed_json['rates']['JPY'], 2)
