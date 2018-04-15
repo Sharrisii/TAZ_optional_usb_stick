@@ -3,6 +3,9 @@
 # Retrieves and displays currency rates info from fixer.io
 # Script made by Brian Peregrine, under GPL v3 license.
 #
+# Note that the base=EUR parameter (which is default) still works, even with the free plan and this is used here. 
+# Changing it to a different currency doesn't work with free plans (this only works with paying plans).
+#
 # Program code:
 import urllib2
 import json
