@@ -3,7 +3,7 @@
 
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
-# Next, copy your profile file (default) from /home/username/.config/gajim/ to /mnt/*/profiles/gajim
+# Next, copy your profile file from /home/username/.config/gajim/ to /mnt/*/profiles/gajim
 # The rest is handled by following code:
 gajim -p default -c /mnt/*/profiles/gajim
 
@@ -22,6 +22,6 @@ cp /mnt/*/profiles/linphone/* /home/*/.linphonerc/
 # The rest is handled by following code:
 if [ -f /usr/bin/claws-mail ] then
 claws-mail --alternate-config-dir /mnt/*/emails/.clawsconfig/
-cp -f /home/*/Mail/Inbox/*.eml /mnt/*/emails/Inbox/
-cp -f /home/*/Mail/Outbox/*.eml /mnt/*/emails/Outbox/
-cp -f /home/*/Mail/Sent/*.eml /mnt/*/emails/Sent/
+cp -f /home/*/Mail/inbox/*.eml /mnt/*/emails/inbox/
+cp -f /home/*/Mail/draft/*.eml /mnt/*/emails/draft/
+cp -f /home/*/Mail/sent/*.eml /mnt/*/emails/sent/
