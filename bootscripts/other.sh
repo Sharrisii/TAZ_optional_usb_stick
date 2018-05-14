@@ -16,6 +16,8 @@ cp /mnt/*/profiles/linphone/* /home/*/.linphonerc/
 # Example code: claws-mail
 # First, start claws-mail and enter the configuration settings for your (POP3 or IMAP) account
 # Next, copy your configuration files from /home/username/.claws-mail to /mnt/*/emails/.clawsconfig/
+# By configuration files I mean not just the user account data but also program data (important for instance to skip
+# the account registration box that auto-launches the first time (= first run)
 # The rest is handled by following code:
 if [ -f /usr/bin/claws-mail ] then
 claws-mail --alternate-config-dir /mnt/*/emails/.clawsconfig/
