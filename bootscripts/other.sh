@@ -3,10 +3,9 @@
 
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
-# Next, copy your profile file (config.default) from ? to /mnt/*/profiles/gajim
+# Next, copy your profile file (default) from ? to /mnt/*/profiles/gajim
 # The rest is handled by following code:
-cp /mnt/*/profiles/gajim/* ?
-gajim -p /?/config.default
+gajim -p default -c /mnt/*/profiles/gajim
 
 # Example code: linphone
 # First, start linphone and enter the configuration settings for your messenger account(s)
