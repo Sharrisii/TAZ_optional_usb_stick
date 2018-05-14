@@ -3,9 +3,9 @@
 
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
-# Next, copy your profile file from /home/username/.config/gajim/ to /mnt/*/profiles/gajim
+# Next, rename your profile text to default.txt and copy it from /home/username/.config/gajim/ to /mnt/*/profiles/gajim
 # The rest is handled by following code:
-gajim -p default -c /mnt/*/profiles/gajim
+gajim -p default -c /mnt/*/profiles/gajim/
 
 # Example code: linphone
 # First, start linphone and enter the configuration settings for your messenger account(s)
