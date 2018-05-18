@@ -1,5 +1,5 @@
 MyMinFin
-https://eservices.minfin.fgov.be/mym-portal/public/citizen/welcome
+https://eservices.minfin.fgov.be/
 
 Mysocialsecurity / eBox
 https://www.mysocialsecurity.be/
