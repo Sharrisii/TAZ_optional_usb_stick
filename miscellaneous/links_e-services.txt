@@ -1,8 +1,16 @@
-MyMinFin
-https://eservices.minfin.fgov.be/
+This document contains some links to sites that require the eid-mw package to work:
+
+Doccle
+https://www.doccle.be/
+
+Mijngezondheid
+https://www.mijngezondheid.belgie.be/
 
 Mysocialsecurity / eBox
 https://www.mysocialsecurity.be/
+
+MyMinFin
+https://eservices.minfin.fgov.be/
 
 Mypension
 https://mypension.onprvp.fgov.be/
