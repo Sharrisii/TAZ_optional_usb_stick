@@ -1,7 +1,7 @@
 This document contains some links to sites that require the eid-mw package to work:
 
 Doccle
-https://www.doccle.be/
+https://www.doccle.be/ 
 
 Mijngezondheid
 https://www.mijngezondheid.belgie.be/
