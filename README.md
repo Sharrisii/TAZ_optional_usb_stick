@@ -14,10 +14,11 @@ The functions of the USB stick are the following:
 * load gajim, linphone and claws-mail config settings
 * load a customized conky system monitor panel, openbox keybinds list panel, currency and commodity rates & weather & news panel
 * load configuration files for the printer
-* load a special autoconfig.js and a special config settings cfg-file for palemoon
+* load an (customized) 8th boot setup (squashfs archive) -if chosen at bootup-
 * remove regular searchplugins and add SSL-searchplugins for palemoon and set a different homepage
+* add a special autoconfig.js and a special config settings cfg-file for palemoon
+* add several extensions to palemoon
 * copy any emails that came in via claws-mail to the usb stick
-* copy a file with useful links
+* copy a file with useful links, as well as a few readme's
 * use feh as a screensaver, displaying images in the /images: folder in a slideshow
-* load an (customized) 8th boot setup (squashfs archive)
 * have a space to store emails, images, portable games
