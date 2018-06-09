@@ -83,16 +83,16 @@
 	if you use the password "kft123", you can use "kft456" for example on a different web service.
 </p>
 
-<h2>Updating Pale Moon, adding plugins and displaying content</h2>
+<h2>Updating New Moon, adding plugins and displaying content</h2>
 <p>
-	Pale Moon has been set to no longer automatically update, since updating it might result in compatibility problems 
+	New Moon (a.k.a. Pale Moon with unofficial branding) has been set to no longer automatically update, since updating it might result in compatibility problems 
 	with the plugins added, causing them to no longer function, and thus fail in protecting you. You can change this temporarily in 
-	Pale Moon, if you are sure that updating won't cause compatibility problems with the plugins, for example if new versions 
-	of the plugins have come out, or if the Pale Moon update is known not to cause compatibility problems.<br /><br />
+	New Moon, if you are sure that updating won't cause compatibility problems with the plugins, for example if new versions 
+	of the plugins have come out, or if the New Moon update is known not to cause compatibility problems.<br /><br />
 	
 	Regarding the adding of new plugins: this is still possible, but make sure you temporarily disable the "User agent overrider" 
-	plugin before you visit the Pale Moon extensions page. Else, it won't work (at least not if you chosen a different user 
-	agent as your current browser with the User agent overrider button in Pale Moon; which is something you best do btw for 
+	plugin before you visit the New Moon extensions page. Else, it won't work (at least not if you chosen a different user 
+	agent as your current browser with the User agent overrider button in New Moon; which is something you best do btw for 
 	regular surfing).<br /><br />
 	
 	For surfing to/using certain websites, you may need flash and/or javascript capability. This is blocked currently 
@@ -101,7 +101,7 @@
 	
 	Note that if you need flash for viewing certain youtube video's, embedded in websites, you can also use mps-youtube 
 	(start it using the "mps-youtube" command) in "Run program"). On the webpage's source (just right-click 
-	in Pale Moon, and select "View Page Source"), you should be able to find the details to find and run the same video in 
+	in New Moon, and select "View Page Source"), you should be able to find the details to find and run the same video in 
 	mps-youtube. This method thus allows you to circumvent the process of disabling/enabling noscript, and it's also much 
 	safer, as the mps-youtube does not use flash, and there are, as such, no security risks involved with this method, 
 	whereas when you disable noscript, and then run the youtube flash-applet, there certainly are.  
@@ -110,7 +110,7 @@
 <h2>Using other programs connecting to the web</h2>
 
 <p>
-	The script has only made Pale Moon safer to use. Any other browsers or other programs you normally use
+	The script has only made New Moon safer to use. Any other browsers or other programs you normally use
 	are hence unaffected by the script and will remain equally safe/unsafe as before. It is hence advised that you no longer
 	use any other browsers.<br />
 
@@ -140,18 +140,18 @@
 	dsCrypt (run with Wine) or Vim, again with the password and encryption method specified in the (unencrypted) e-mail message. As such, this still means that you can't use encryption on
 	all the mails you sent (most of which may be people you don't know and/or had no prior contact with).
 
-<h2>How were the the settings automatically altered in the Pale Moon browser ?</h2>
+<h2>How were the the settings automatically altered in the New Moon browser ?</h2>
 
 </p>
-    For developers, it might be useful to know how the Pale Moon browser with modified settings was made (the moddified settings contains settings also stored in the config files -like all.js, prefs.js, palemoon.js, vendor.js, ... 
+    For developers, it might be useful to know how the New Moon browser with modified settings was made (the moddified settings contains settings also stored in the config files -like all.js, prefs.js, palemoon.js, vendor.js, ... 
     The settings were automatically changed by a script placed in /usr/local/palemoon/defaults/pref/<br />
-    This method allows use of newer versions of Pale Moon as well (in which case, just replace the Pale Moon folder with the newer Pale Moon version and move over the settings file). 
-    Note that just uncompressing the omni.ja file to be able to edit the js files directly could have also been done but not have allowed using updated Pale Moon versions, and would also have been a hassle. This, as you'd then
+    This method allows use of newer versions of New Moon as well (in which case, just replace the New Moon folder with the newer New Moon version and move over the settings file). 
+    Note that just uncompressing the omni.ja file to be able to edit the js files directly could have also been done but not have allowed using updated New Moon versions, and would also have been a hassle. This, as you'd then
     needed to use a de-optimizer tool (ActivePython and optimizejars.py), and repack the omni.ja file, re-optimize the file, ... See <a href="https://developer.mozilla.org/en-US/docs/Mozilla/About_omni.ja_%28formerly_omni.jar%29">here</a> 
     and <a href="https://www.raymond.cc/blog/edit-files-inside-firefox-4-omni-jar-to-auto-save-password/">here</a>. Even if I were to have succeeded in this, it would then also have been a hassle to find all 
     the settings in the .js files, and with every new palemoon version, one needs to re-update the palemoon version anyway, since the .js files could be changed since the latest palemoon version 
     as well (so it has exactly the same problem as the low-tech method I used).<br />
-    Anyway, for developers that want to make their own similar Pale Moon version, feel free to use the modified settings file available in the folder noted above. Unlike the original settings 
+    Anyway, for developers that want to make their own similar New Moon version, feel free to use the modified settings file available in the folder noted above. Unlike the original settings 
     of the security guide, it has been made a bit less restricted to still allow a (limited form of) the history feature in palemoon. Other changes are the altered download location and the 
     disabling of the automatic palemoon update (to avoid problems with the extensions added).  
 <p>
