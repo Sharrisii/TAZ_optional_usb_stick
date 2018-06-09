@@ -8,7 +8,6 @@ The functions of the USB stick are the following:
 * create labels for parallel, serial and usb hard disks, as well as serial, parallel and usb opticals
 * load a user-set wallpaper color
 * load a user-set screen resoution
-* load a user-set DNS address
 * load a user-set keymap
 * load a customized openbox menu and openbox rc file
 * load gajim, linphone and claws-mail config settings
