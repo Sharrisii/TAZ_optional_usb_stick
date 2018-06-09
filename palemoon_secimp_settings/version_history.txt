@@ -1,4 +1,4 @@
-The first version of TAZ had following plugins updated:
+The first version of TAZ (gentoo) had following plugins updated:
 calomel_ssl_validation-0.62.xpi --> replaced with CipherFox 4.2.0 (https://addons.palemoon.org/addon/cipherfox/ )
 encryptedweb-5.1.1.xpi --> to version 5.1.5 (https://addons.palemoon.org/addon/encrypted-web/ )
 noscript-2.6.9.39.xpi --> to version 5.0.6 (https://addons.palemoon.org/addon/noscript/ )
