@@ -20,6 +20,13 @@
 				</command>
 			</action>
 		</item>
+		<item label="DHCP client">
+			<action name="Execute">
+				<command>
+					dhcpcd-ui
+				</command>
+			</action>
+		</item>
 		<item label="Package manager">
 			<action name="Execute">
 				<command>
