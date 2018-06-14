@@ -1,5 +1,8 @@
 This document contains some links to sites that require the eid-mw package to work:
 
+Zoomit
+https://www.zoomit.be/
+
 Doccle
 https://www.doccle.be/ 
 
