@@ -27,6 +27,13 @@
 				</command>
 			</action>
 		</item>
+		<item label="Network connection">
+			<action name="Execute">
+				<command>
+					wicd
+				</command>
+			</action>
+		</item>
 		<item label="Package manager">
 			<action name="Execute">
 				<command>
