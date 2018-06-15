@@ -55,13 +55,6 @@
 				</command>
 			</action>
 		</item>
-		<item label="File transfer protector">
-			<action name="Execute">
-				<command>
-					pypar2
-				</command>
-			</action>
-		</item>
 		<item label="Antivirus">
 			<action name="Execute">
 				<command>
