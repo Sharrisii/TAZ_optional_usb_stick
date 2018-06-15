@@ -2,7 +2,8 @@ The first version of TAZ (gentoo) had following plugins:
 CipherFox 4.2.0 (https://addons.palemoon.org/addon/cipherfox/ )
 encryptedweb 5.1.5 (https://addons.palemoon.org/addon/encrypted-web/ )
 noscript 5.0.6 (https://addons.palemoon.org/addon/noscript/ )
-ublock_origin 1.14.25rc1 (https://github.com/gorhill/uBlock/releases)
+ublock_origin 1.14.25rc1 (https://github.com/gorhill/uBlock/releases )
+belgium-eid 1.0.23 (https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/versions/ )
 user_agent_overrider 0.2.4 was replaced with eclipsed moon 1.04 (https://addons.palemoon.org/addon/eclipsedmoon/ )
 
 All plugins had their filename changed to the id name (noted in install.rdf), so as to allow global installation, 
