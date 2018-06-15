@@ -31,3 +31,5 @@ cp -f /Mail/sent/*.eml /mnt/*/emails/sent/
 # done via browser by typing in the ip, ie 192.168.1.1
 # see also: https://wiki.gentoo.org/wiki/Network_management_using_DHCPCD
 # and https://wiki.gentoo.org/wiki/Dhcpcd and https://wiki.gentoo.org/wiki/Handbook:X86/Full/Networking
+# cd ../networking/
+# cp -f dhcpcd.conf /etc/
