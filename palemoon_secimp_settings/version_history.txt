@@ -4,6 +4,7 @@ encryptedweb 5.1.5 (https://addons.palemoon.org/addon/encrypted-web/ )
 noscript 5.0.6 (https://addons.palemoon.org/addon/noscript/ )
 ublock_origin 1.14.25rc1 (https://github.com/gorhill/uBlock/releases )
 belgium-eid 1.0.23 (https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/versions/ )
+change referer button 0.44 fx+tb (https://addons.mozilla.org/en-US/firefox/addon/change-referer-button/versions/ )
 user_agent_overrider 0.2.4 was replaced with eclipsed moon 1.04 (https://addons.palemoon.org/addon/eclipsedmoon/ )
 
 All plugins had their filename changed to the id name (noted in install.rdf), so as to allow global installation, 
@@ -17,11 +18,13 @@ These had the same filenames:
 encrypted web: {8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}
 eclipsed moon: {8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}
 belgium-eid: {ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+change_referer_button {ec8030f9-c20a-464f-9b0e-19a4a9e97373
 so these were manually corrected (by unzipping the .xpi file, and editing the install.rdf file, and then re-zipping it 
 and changing the extension to .xpi to:
 eclipsed moon: {8de7fcbb-c55c-4fbe-bfc5-fc555c89dbc7}
 encryptedweb: {8de7fcbb-c55c-4fbe-bfc5-fc555c48dbc9}
 belgium-eid: {ec8030f7-c20a-464f-9b0e-18a7a7e78495}
+change_referer_button {ec8020f1-c20a-464f-9b0e-13a3a9e97385}
 
 I then reverted back to user_agent_overrider-0.2.4.xpi (as I didn't like eclipsed moon) yet altered the install.rdf (changing the
 id from {ec8030f7-c20a-464f-9b0e-13a3a9e97384} to {ec8030f7-c20a-464f-9b0e-13a3a9e28485} ).
