@@ -1,6 +1,7 @@
 #!/bin/bash
 #See https://wiki.gentoo.org/wiki/SANE
 #and https://help.ubuntu.com/community/SANE%20-%20Installing%20a%20scanner%20that%20isn%27t%20auto-detected
+#and https://forums.gentoo.org/viewtopic-t-210616-start-0.html
 
 # Check whether your scanner is supported by SANE by viewing http://www.sane-project.org/sane-supported-devices.html
 # If the scanner is supported, this script will add the user taz and root to the scanner user group
