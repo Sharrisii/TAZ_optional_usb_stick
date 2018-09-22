@@ -8,7 +8,7 @@
 usermod -aG scanner taz
 usermod -aG scanner root
 
-# If the scanner hasn't been detected (check with scanimage -L or sane-find-scanner , open the file /etc/sane.d/dll.conf and 
+# If the scanner hasn't been detected (check with scanimage -L or sane-find-scanner), then open the file /etc/sane.d/dll.conf and 
 # manually remove the hashtag before the words "example-backend" of your listed brand of scanner. 
 # If it's a usb scanner, also open up /etc/sane.d/example.conf and find the line with the word "usb" in it and then add 
 # the vendor and the product number you got with the scanimage -L command. It will look similar like this: 0x01aa 0x0001
