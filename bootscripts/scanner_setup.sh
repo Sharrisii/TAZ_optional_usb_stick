@@ -8,7 +8,7 @@
 
 # Check whether your scanner is supported by SANE by viewing http://www.sane-project.org/sane-supported-devices.html
 # If the scanner is supported, open the file /etc/sane.d/dll.conf
-# Remove the hashtag before your brand of scanner before "example-backend"
+# Remove the hashtag before the words "example-backend" of your listed brand of scanner
 
 
 sane-find-scanner
