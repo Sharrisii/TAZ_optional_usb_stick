@@ -5,8 +5,6 @@
 
 # Check whether your scanner is supported by SANE by viewing http://www.sane-project.org/sane-supported-devices.html
 # If the scanner is supported, this script will add the user taz and root to the scanner user group
-su
-echo "your_password"
 usermod -aG scanner taz
 usermod -aG scanner root
 
