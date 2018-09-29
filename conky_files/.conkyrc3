@@ -46,7 +46,7 @@ border_outer_margin 5
 border_width 0
 
 # Default colors and also border colors
-default_color Dark Gray
+default_color Light Blue
 default_shade_color Black
 default_outline_color Dark Gray
 color1 Dark Sea Green
