@@ -7,12 +7,13 @@ The functions of the USB stick are the following:
 * hide the /dev/cdrom, and /dev/dvd symlinks to sr0, as well as the /dev/disk folder
 * create labels for parallel, serial and usb hard disks, as well as serial, parallel and usb opticals
 * load a user-set wallpaper color
-* load a user-set screen resoution
+* load a user-set screen resolution
 * load a user-set keymap
 * load a customized openbox menu and openbox rc file
 * load gajim, linphone and claws-mail config settings
 * load a customized conky system monitor panel, openbox keybinds list panel, currency and commodity rates & weather & news panel
-* load configuration files for the printer
+* load configuration files for the printer (when using boot setup 2)
+* load configuration files for the scanner (when using boot setup 5)
 * load any of the standard boot setups from 2 to 7 -if chosen at bootup-
 * load a (customized) 8th boot setup (squashfs archive) -if chosen at bootup-
 * remove regular searchplugins and add SSL-searchplugins for palemoon and set a different homepage
