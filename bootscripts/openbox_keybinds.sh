@@ -7,3 +7,7 @@
 cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/menu.xml
 cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/rc.xml
 openbox --reconfigure
+
+# Now that the keybinds are integrated, there is no need for a menu button on the lxpanel (the lxpanel is only used now for the taskbar)
+edit $HOME/.config/lxpanel/LXDE/panels/panel
+remove plugin menu section, see https://wiki.lxde.org/en/LXPanel
