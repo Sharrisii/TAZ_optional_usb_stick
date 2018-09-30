@@ -34,3 +34,12 @@ cp -f /Mail/sent/*.eml /mnt/*/emails/sent/
 # and https://wiki.gentoo.org/wiki/Dhcpcd and https://wiki.gentoo.org/wiki/Handbook:X86/Full/Networking
 # cd ../networking/
 # cp -f dhcpcd.conf /etc/
+
+# Example code: setting of timezone for the lxpanel clock
+# To see avilable timezones: ls /usr/share/zoneinfo
+# See also: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Base#Timezone
+echo "Europe/Brussels" > /etc/timezone
+emerge --config sys-libs/timezone-data
+
+# Disable lxpanel and use only right-click menu
+#
