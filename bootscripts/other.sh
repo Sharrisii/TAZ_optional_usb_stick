@@ -1,5 +1,6 @@
 #!/bin/bash
 # Place any other commands you still need in this file. This may include copying settings for gajim, linphone, claws-mail, ...
+# Also present here are the setting of the timezone of the lxpanel clock, and the lxpanel disable option (standard setting for this is off, so outcommented)
 
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
