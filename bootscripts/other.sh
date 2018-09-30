@@ -1,6 +1,6 @@
 #!/bin/bash
 # Place any other commands you still need in this file. This may include copying settings for gajim, linphone, claws-mail, ...
-# Also present here are the setting of the timezone of the lxpanel clock, and the lxpanel disable option (standard setting for this is off, so outcommented)
+# Also present here are the setting of the timezone of the lxpanel clock
 
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
@@ -40,6 +40,3 @@ cp -f /Mail/sent/*.eml /mnt/*/emails/sent/
 # See also: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Base#Timezone
 echo "Europe/Brussels" > /etc/timezone
 emerge --config sys-libs/timezone-data
-
-# Disable lxpanel and use only right-click menu
-#
