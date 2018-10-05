@@ -10,5 +10,5 @@ openbox --reconfigure
 
 # Now that the keybinds and right-click menu are integrated, there is no need for a menu button on the lxpanel
 # We're not disabling it entirely though since the taskbar is still useful; rather we're just removing the menu button
-edit $HOME/.config/lxpanel/LXDE/panels/panel
-remove plugin menu section, see https://wiki.lxde.org/en/LXPanel
+# See https://wiki.lxde.org/en/LXPanel
+sed -i -e "27,51d" panel /home/taz/.config/lxpanel/LXDE/panels/
