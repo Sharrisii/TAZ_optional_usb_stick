@@ -1,5 +1,5 @@
 #!/bin/bash
-# This file copies some settings, extensions and searchplugins to the palemoon folder (/opt/palemoon ) at bootup.
+# This file copies some settings, extensions and searchplugins to the palemoon folder (/usr/lib/palemoon ) at bootup.
 # It will also delete the non-SSL searchplugins and make a /downloads/ folder under / and put a Postinstallation.html in it.
 # See http://kb.mozillazine.org/Search_Bar
 # See http://kb.mozillazine.org/Installing_extensions
@@ -9,15 +9,15 @@ mkdir /downloads/
 cp -f ../palemoon_secimp_settings/downloads/Postinstallation.html /downloads/Postinstallation.html
 
 cd ../palemoon_secimp_settings/opt/
-cp -f Updated_about_config_settings.cfg /opt/palemoon
+cp -f Updated_about_config_settings.cfg /usr/lib/palemoon
 
 cd ../palemoon_secimp_settings/opt/palemoon/defaults/pref/
-cp -f autoconfig.js /opt/palemoon/defaults/pref/
+cp -f autoconfig.js /usr/lib/palemoon/defaults/pref/
 
 cd ../palemoon_secimp_settings/opt/palemoon/browser/extensions/
-cp -f * /opt/palemoon/browser/extensions/
+cp -f * /usr/lib/palemoon/browser/extensions/
 
-cd /opt/palemoon/browser/searchplugins/
+cd /usr/lib/palemoon/browser/searchplugins/
 rm *
 cd ../palemoon_secimp_settings/opt/palemoon/browser/searchplugins/
-cp -f * /opt/palemoon/browser/searchplugins/
+cp -f * /usr/lib/palemoon/browser/searchplugins/
