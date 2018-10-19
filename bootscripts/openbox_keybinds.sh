@@ -5,7 +5,7 @@
 # see https://linux.die.net/man/1/openbox
 
 cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/menu.xml
-cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/rc.xml
+cp -f ../openbox_configs/rc.xml /etc/xdg/openbox/rc.xml
 openbox --reconfigure
 
 # Now that the keybinds and right-click menu are integrated, there is no need for a menu button on the lxpanel
