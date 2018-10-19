@@ -23,7 +23,7 @@
 		<item label="DHCP client">
 			<action name="Execute">
 				<command>
-					dhcpcd-ui
+					dhcpcd-gtk
 				</command>
 			</action>
 		</item>
