@@ -83,13 +83,6 @@
 				</command>
 			</action>
 		</item>
-		<item label="Presentation">
-			<action name="Execute">
-				<command>
-					impressive
-				</command>
-			</action>
-		</item>
 		<item label="Audio Player">
 			<action name="Execute">
 				<command>
