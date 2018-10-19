@@ -55,13 +55,6 @@
 				</command>
 			</action>
 		</item>
-		<item label="Antivirus">
-			<action name="Execute">
-				<command>
-					clamav
-				</command>
-			</action>
-		</item>
 		<item label="Word Processor">
 			<action name="Execute">
 				<command>
