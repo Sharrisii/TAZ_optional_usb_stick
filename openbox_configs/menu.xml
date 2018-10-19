@@ -48,5 +48,12 @@
 				</command>
 			</action>
 		</item>
+		<item label="LXDE-Logout">
+			<action name="Execute">
+				<command>
+					lxde-logout
+				</command>
+			</action>
+		</item>
 		</menu>
 </openbox_menu>
