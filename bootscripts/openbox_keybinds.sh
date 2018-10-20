@@ -4,9 +4,12 @@
 # once the files have been replaced, a command has been added to restart openbox with the new config files
 # see https://linux.die.net/man/1/openbox
 
-cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/menu.xml
-cp -f ../openbox_configs/rc.xml /etc/xdg/openbox/rc.xml
-openbox --reconfigure
+# This section is outcommented since the same xml files are already on the taz iso.
+# Remove comments if you want to activate this again 
+# (i.e. if you want to change these xml's (in the openbox_configs folder) and have them overwrite the xml files on the iso)
+# cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/menu.xml
+# cp -f ../openbox_configs/rc.xml /etc/xdg/openbox/rc.xml
+# openbox --reconfigure
 
 # Now that the keybinds and right-click menu are integrated, there is no need for a menu button on the lxpanel
 # We're not disabling it entirely though since the taskbar is still useful; rather we're just removing the menu button
