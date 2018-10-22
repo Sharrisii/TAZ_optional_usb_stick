@@ -6,7 +6,7 @@ cp -f ../device_names_files/.hidden /dev/
 # Copy notes.txt to /dev/
 cp -f ../device_names_files/notes.txt /dev/
 
-# Append udev rules to /lib/udev/rules.d/60-persistent-storage.rules to make udev automatically make labels
+# Append udev rules to /lib/udev/rules.d/60-persistent-storage.rules to have eudev automatically make labels
 # for parallel, serial and usb hard drives, as well as parallel, serial and usb cd(r)(w), and dvd(r)(w) drives
 echo"
 KERNEL=="sd*", ENV{ID_BUS}=="ata", ENV{DEVTYPE}=="disk", ENV{ID_ATA_SATA}!="1", ENV{ID_SERIAL}=="?*", SYMLINK+="disk/by-id/PARALLEL_ATA-$env{ID_SERIAL}"
