@@ -126,14 +126,14 @@
 	
 	If you also want to add an (unsecure form of) encryption to your e-mails, for example to prevent spiders of reading and collecting data from your e-mails 
 	in an automated way, you can add a plugin like <a href="https://code.google.com/p/zillo/zillo">zillo</a> to Gedit or <a href="http://plugins.geany.org/geanypg.html">GeanyPG</a> 
-	to Geany (installed with the apt-get install geany-plugin-pg command). Note that the last one (GeanyPG) is rather complicated to use as it requires a key pair (rather 
-	than just a single password) and setting up everything is also not straightforward (you'll need to use the terminal to make the key pair, ...). One alternative to using off-line 
-	programs is to use a web tool like <a href="http://www.howtogeek.com/135638/the-best-free-ways-to-send-encrypted-email-and-secure-messages/">SafeMess.com</a>. The idea is that you then write your e-mail 
+	to Geany. Note that the last one (GeanyPG) is rather complicated to use as it requires a key pair (rather than just a single password) and setting up everything is also not straightforward 
+	(you'll need to use the terminal to make the key pair, ...). One alternative to using off-line programs is to use a web tool like 
+	<a href="http://www.howtogeek.com/135638/the-best-free-ways-to-send-encrypted-email-and-secure-messages/">SafeMess.com</a>. The idea is that you then write your e-mail 
 	in the offline-program, or in the web tool, then copy/paste text into your e-mail, and put the password and the encryption method used in the subject header (which is the part of the message 
 	that is not encrypted). Obviously, any human can open this, but it should prevent spiders of reading the mails, which could result in much less spam arriving in your e-mail. 
 	Besides using direct encryption of text, there's also the option of just making a text file, encrypting that with a file encryption tool (like 
-	<a href="http://members.ozemail.com.au/~nulifetv/freezip/freeware/">dsCrypt (run with Wine)</a> or <a href="http://www.7-zip.org/">7-zip</a>, Vim (using the vim -x filename.txt command), mcrypt (using 
-	the mcrypt and mcrypt-d command, openssl (using the openssl enc -aes-256-cbc -salt -in file.txt -out file.out, and openssl enc -d -aes-256-cbc -in file.out command), and then 
+	<a href="http://members.ozemail.com.au/~nulifetv/freezip/freeware/">dsCrypt (run with Wine)</a> or <a href="http://www.7-zip.org/">7-zip</a>, Vim (using the vim -x filename.txt command), 
+	mcrypt (using the mcrypt and mcrypt-d command, openssl (using the openssl enc -aes-256-cbc -salt -in file.txt -out file.out, and openssl enc -d -aes-256-cbc -in file.out command), and then 
 	sending this as an annex in your e-mail, and putting the password and encryption method used anywhere in your e-mail (doesn't matter whether it's in the subject header 
 	or the actual content, as the mail itself isn't encrypted at all anyway). <br /><br />
 
