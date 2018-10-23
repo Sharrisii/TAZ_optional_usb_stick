@@ -126,11 +126,11 @@
 	
 	If you also want to add an (unsecure form of) encryption to your e-mails, for example to prevent spiders of reading and collecting data from your e-mails 
 	in an automated way, you can use <a href="https://www.ghacks.net/2009/07/11/encrypting-email-in-claws-mail/">Claws Mails with PGP</a> or you can add a plugin like 
-	<a href="http://plugins.geany.org/geanypg.html">GeanyPG</a> to Geany. Note that PGP is rather complicated to use as it requires a key pair (rather than just a single password) 
-	and setting up everything is also not straightforward (you'll need to use the terminal to make the key pair, ...). One alternative to using off-line programs is to use a web tool like 
-	<a href="http://www.howtogeek.com/135638/the-best-free-ways-to-send-encrypted-email-and-secure-messages/">SafeMess.com</a>. The idea is that you then write your e-mail 
-	in the offline-program, or in the web tool, then copy/paste text into your e-mail, and put the password and the encryption method used in the subject header (which is the part of the message 
-	that is not encrypted). Obviously, any human can open this, but it should prevent spiders of reading the mails, which could result in much less spam arriving in your e-mail. 
+	<a href="http://plugins.geany.org/geanypg.html">GeanyPG</a> to Geany. Note that asymmetric encryption like PGP is rather complicated as it requires a key pair (rather than just a single password) 
+	and setting up everything is also not straightforward (you'll need to use the terminal to make the key pair, ...). Read through <a href="https://medium.com/@johnnyRose/getting-started-with-pgp-and-gpg-58c8d6c35df5">a manual on PGP</a> 
+	if you want to use it regardless. One alternative to using off-line programs is to use a web tool like <a href="http://www.howtogeek.com/135638/the-best-free-ways-to-send-encrypted-email-and-secure-messages/">SafeMess.com</a>. 
+	The idea is that you then write your e-mail in the offline-program, or in the web tool, then copy/paste text into your e-mail, and put the password and the encryption method used in the subject header (which is the part of the 
+	message that is not encrypted). Obviously, any human can open this, but it should prevent spiders of reading the mails, which could result in much less spam arriving in your e-mail. 
 	Besides using direct encryption of text, there's also the option of just making a text file, encrypting that with a file encryption tool (like 
 	<a href="http://members.ozemail.com.au/~nulifetv/freezip/freeware/">dsCrypt (run with Wine)</a> or <a href="http://www.7-zip.org/">7-zip</a>, Vim (using the vim -x filename.txt command), 
 	mcrypt (using the mcrypt and mcrypt-d command, openssl (using the openssl enc -aes-256-cbc -salt -in file.txt -out file.out, and openssl enc -d -aes-256-cbc -in file.out command), and then 
