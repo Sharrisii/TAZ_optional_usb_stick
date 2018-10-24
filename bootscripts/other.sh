@@ -28,8 +28,11 @@ cp -f /Mail/draft/*.eml /mnt/*/emails/draft/
 cp -f /Mail/sent/*.eml /mnt/*/emails/sent/
 
 # Example code: gnupg public, private (and/or subkeys) import
+# See https://www.phildev.net/pgp/gpg_moving_keys.html
+# and http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/
 cd  ../e-mails/gnupg_keys/
 gpg --import *.asc
+trust 5
 
 # Example code: dhcpcd
 # Use this only if you need to set up your internet connection (ethernet modems generally don't need it, config of these are
