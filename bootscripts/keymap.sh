@@ -6,4 +6,4 @@
 
 # the command below sets the belgian latin1 version of the azerty keyboard;
 # see /usr/share/kbd/keymaps/i386/azerty
-setxkbmap -layout be-latin1
+# setxkbmap -layout be-latin1
