@@ -6,11 +6,11 @@ Note that you'll need to format the USB stick in a file system that can be read 
 The functions of the USB stick are the following:
 * hide the /dev/cdrom, and /dev/dvd symlinks to sr0, as well as the /dev/disk folder
 * create labels for parallel, serial and usb hard disks, as well as serial, parallel and usb opticals
-* load a user-set wallpaper color
-* load a user-set screen resolution
-* load a user-set keymap
+* load a user-set wallpaper color (!)
+* load a user-set screen resolution (!)
+* load a user-set keymap (!)
 * set the local timezone for the lxpanel clock
-* load a customized openbox menu and openbox rc file (this function is currently disabled), remove the menu button on lxpanel as this menubutton then becomes redundant
+* load a customized openbox menu and openbox rc file (!), remove the menu button on lxpanel as this menubutton then becomes redundant (!)
 * load gajim, linphone and claws-mail config settings
 * load a customized conky system monitor panel, openbox keybinds list panel, currency and commodity rates & weather & news panel
 * load configuration files for the printer (when using boot setup 2)
@@ -24,3 +24,5 @@ The functions of the USB stick are the following:
 * copy over a file with useful links, as well as a few readme's from the USB stick to TAZ
 * use feh as a screensaver, displaying images in the /images: folder in a slideshow
 * have a space to store emails, images, spreadsheets, documents, portable games
+
+(!)= this function is currently disabled, to enable simply remove the # in the code
