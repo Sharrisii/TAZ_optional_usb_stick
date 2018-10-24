@@ -32,6 +32,7 @@ cp -f /Mail/sent/*.eml /mnt/*/emails/sent/
 # and http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/
 # and https://www.gnupg.org/gph/en/manual/x56.html
 # and https://futureboy.us/pgp.html
+# Note that one other way to copy over the keys is to simply copy the entire /home/taz/.gnupg/ folder
 cd  ../e-mails/gnupg_keys/mykeys/
 gpg --import *.asc
 trust 5
