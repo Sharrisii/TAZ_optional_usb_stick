@@ -20,6 +20,7 @@ The functions of the USB stick are the following:
 * remove regular searchplugins and add SSL-searchplugins for palemoon and set a different homepage
 * add a special autoconfig.js and a special config settings cfg-file for palemoon
 * add several extensions to palemoon
+* import gnupg private and public keys (and/or subkeys)
 * copy any emails that came in via claws-mail to the usb stick
 * copy over a file with useful links, as well as a few readme's from the USB stick to TAZ
 * use feh as a screensaver, displaying images in the /images: folder in a slideshow
