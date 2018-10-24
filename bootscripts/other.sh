@@ -27,6 +27,11 @@ cp -f /Mail/inbox/*.eml /mnt/*/emails/inbox/
 cp -f /Mail/draft/*.eml /mnt/*/emails/draft/
 cp -f /Mail/sent/*.eml /mnt/*/emails/sent/
 
+# Example code: gnupg public, private (and/or subkeys) import
+cd  ../e-mails/gnupg_keys/
+gpg --import public.key
+gpg --import private.key
+
 # Example code: dhcpcd
 # Use this only if you need to set up your internet connection (ethernet modems generally don't need it, config of these are
 # done via browser by typing in the ip, ie 192.168.1.1
