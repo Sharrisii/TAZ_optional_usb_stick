@@ -2,5 +2,5 @@
 # which allow setting a different resolution
 # see https://wiki.gentoo.org/wiki/Xrandr
 
-sleep 2
-xrandr --output LVDS --mode 1024x768
+# sleep 2
+# xrandr --output LVDS --mode 1024x768
