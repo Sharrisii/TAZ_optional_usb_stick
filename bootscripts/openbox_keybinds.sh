@@ -9,6 +9,7 @@
 # (i.e. if you want to change these xml's (in the openbox_configs folder) and have them overwrite the xml files on the iso)
 # cp -f ../openbox_configs/menu.xml /etc/xdg/openbox/menu.xml
 # cp -f ../openbox_configs/rc.xml /etc/xdg/openbox/rc.xml
+# cp -f ../openbox_configs/lxde-rc.xml /home/taz/.config/openbox/lxde-rc.xml
 # openbox --reconfigure
 
 # Now that the keybinds and right-click menu are integrated, there is no need for a menu button on the lxpanel
