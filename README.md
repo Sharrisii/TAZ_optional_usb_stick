@@ -15,8 +15,8 @@ The functions of the USB stick are the following:
 * load a customized conky system monitor panel, openbox keybinds list panel, currency and commodity rates & weather & news panel
 * load configuration files for the printer (when using boot setup 2)
 * load configuration files for the scanner (when using boot setup 5)
-* load any of the standard boot setups from 2 to 7 -if chosen at bootup- (only with x86 version, not in amd64 version; with the latter these boot setups are on the iso instead)
-* load a (customized) 8th boot setup (squashfs archive) -if chosen at bootup-
+* load any of the standard boot setups from 2 to 6 -if chosen at bootup- (only with x86 version, not in amd64 version; with the latter these boot setups are on the iso instead)
+* load a (customized) 7th boot setup (squashfs archive) -if chosen at bootup-
 * remove regular searchplugins and add SSL-searchplugins for palemoon and set a different homepage
 * add a special autoconfig.js and a special config settings cfg-file for palemoon
 * add several extensions to palemoon
