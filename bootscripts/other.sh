@@ -40,10 +40,6 @@ cd  ../e-mails/gnupg_keys/otherskeys/
 gpg --import *.asc
 trust 3
 
-# Example code: copy root hash from usb stick to tmpfs
-cd ../roothash/ 
-cp -f * /etc/shadow/
-
 # Example code: dhcpcd
 # Use this only if you need to set up your internet connection (ethernet modems generally don't need it, config of these are
 # done via browser by typing in the ip, ie 192.168.1.1
