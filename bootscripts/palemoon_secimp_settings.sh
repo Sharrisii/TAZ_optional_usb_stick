@@ -17,9 +17,6 @@ cp -f autoconfig.js /usr/lib/palemoon/defaults/pref/
 cd ../palemoon_secimp_settings/opt/palemoon/browser/extensions/
 cp -f * /usr/lib/palemoon/browser/extensions/
 
-cd ../palemoon_secimp_settings/.moonchild productions/pale moon/
-cp -f xulstore.json /home/taz/.moonchild productions/pale moon/*.default
-
 cd /usr/lib/palemoon/browser/searchplugins/
 rm *
 cd ../palemoon_secimp_settings/opt/palemoon/browser/searchplugins/
