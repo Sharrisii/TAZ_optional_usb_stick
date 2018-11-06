@@ -18,7 +18,7 @@ The functions of the USB stick are the following:
 * load any of the standard boot setups from 2 to 6 -if chosen at bootup- (only with x86 version, not in amd64 version; with the latter these boot setups are on the iso instead)
 * load a (customized) 7th boot setup (squashfs archive) -if chosen at bootup-
 * remove regular searchplugins and add SSL-searchplugins for palemoon and set a different homepage
-* add a special autoconfig.js and a special config settings cfg-file for palemoon
+* add a special autoconfig.js and a special config settings cfg-file for palemoon (!)
 * add several extensions to palemoon
 * import gnupg private and public keys (and/or subkeys)
 * copy any emails that came in via claws-mail to the usb stick
