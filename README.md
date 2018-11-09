@@ -1,7 +1,7 @@
 # TAZ_optional_usb_stick
 Repo containing the files that should be placed on the optional USB stick to accompany the TAZ livecd/usb (if used).
 The optional USB stick is started by files placed on the TAZ repo (in the /files_included_in_TAZ_isos/ folder )
-Note that you'll need to format the USB stick in a file system that uses POSIX permissions and can hence be read/written to well by gentoo (so don't use fat32 but rather ext3/ext4, ReiserFS, ...)
+Note that you'll need to format the USB stick in a file system that can be read/written to by gentoo (fat32, ext3/ext4, ReiserFS, ...)
 
 The functions of the USB stick are the following:
 * hide the /dev/cdrom, and /dev/dvd symlinks to sr0, as well as the /dev/disk folder
