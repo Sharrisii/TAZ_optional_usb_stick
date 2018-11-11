@@ -6,15 +6,15 @@
 # See https://mike.kaply.com/2012/03/15/customizing-firefox-default-preference-files/
 
 mkdir /downloads/
-cp -f ../palemoon_secimp_settings/downloads/Postinstallation.html /downloads/Postinstallation.html
+cp -f /mnt/*/palemoon_secimp_settings/downloads/Postinstallation.html /downloads/Postinstallation.html
 
-cd ../palemoon_secimp_settings/opt/
+cd /mnt/*/palemoon_secimp_settings/opt/
 cp -f Updated_about_config_settings.cfg /usr/lib/palemoon
 
-cd ../palemoon_secimp_settings/opt/palemoon/defaults/pref/
+cd /mnt/*/palemoon_secimp_settings/opt/palemoon/defaults/pref/
 cp -f autoconfig.js /usr/lib/palemoon/defaults/pref/
 
-cd ../palemoon_secimp_settings/opt/palemoon/browser/extensions/
+cd /mnt/*/palemoon_secimp_settings/opt/palemoon/browser/extensions/
 cp -f * /usr/lib/palemoon/browser/extensions/
 
 cd /usr/lib/palemoon/browser/searchplugins/
