@@ -5,8 +5,7 @@
 # See http://kb.mozillazine.org/Installing_extensions
 # See https://mike.kaply.com/2012/03/15/customizing-firefox-default-preference-files/
 
-mkdir /downloads/
-cp -f /mnt/*/palemoon_secimp_settings/downloads/Postinstallation.html /downloads/Postinstallation.html
+cp -f /mnt/*/palemoon_secimp_settings/downloads/Postinstallation.html /home/taz/Downloads/Postinstallation.html
 
 cd /mnt/*/palemoon_secimp_settings/opt/
 cp -f Updated_about_config_settings.cfg /usr/lib/palemoon
