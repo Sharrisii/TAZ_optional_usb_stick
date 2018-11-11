@@ -33,10 +33,10 @@ cp -f /Mail/sent/*.eml /mnt/*/emails/sent/
 # and https://www.gnupg.org/gph/en/manual/x56.html
 # and https://futureboy.us/pgp.html
 # Note that one other way to copy over the keys is to simply copy the entire /home/taz/.gnupg/ folder
-cd  ../e-mails/gnupg_keys/mykeys/
+cd  /mnt/*/e-mails/gnupg_keys/mykeys/
 echo my_passphrase | gpg --import *.asc
 trust 5
-cd  ../e-mails/gnupg_keys/otherskeys/
+cd  /mnt/*/e-mails/gnupg_keys/otherskeys/
 gpg --import *.asc
 trust 3
 
@@ -45,7 +45,7 @@ trust 3
 # done via browser by typing in the ip, ie 192.168.1.1
 # see also: https://wiki.gentoo.org/wiki/Network_management_using_DHCPCD
 # and https://wiki.gentoo.org/wiki/Dhcpcd and https://wiki.gentoo.org/wiki/Handbook:X86/Full/Networking
-# cd ../networking/
+# cd /mnt/*/networking/
 # cp -f dhcpcd.conf /etc/
 
 # Example code: setting of timezone for the lxpanel clock
