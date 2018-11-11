@@ -131,7 +131,7 @@
 	Read through <a href="https://medium.com/@johnnyRose/getting-started-with-pgp-and-gpg-58c8d6c35df5">a manual on PGP</a>.
 	We must note that asymmetric encryption (which PGP uses) is much more complicated then symmetric encryption. So one alternative to using high-end, asymmetric encryption like gpg is to just use a tool that encrypts your message text 
 	which you can then copy/paste right into your e-mail, and put the password and the encryption method used in the subject header (which is the part of the message that is not encrypted). Obviously, any human can open this, but it should 
-	prevent spiders of reading the mails, which could result in much less spam arriving in your e-mail. 
+	prevent spiders of reading the mails, which could result in much less spam arriving in your e-mail. Some tools you could use include openssl (echo "texttoencrypt" | openssl enc -encrytionmethod )
 	Besides using direct encryption of text, there's also the option of just making a text file, encrypting that with a file encryption tool (like xarchiver, Vim (using the vim -x filename.txt command), 
 	mcrypt (using the mcrypt and mcrypt-d command, openssl (using the openssl enc -aes-256-cbc -salt -in file.txt -out file.out, and openssl enc -d -aes-256-cbc -in file.out command), and then 
 	sending this as an annex in your e-mail, and putting the password and encryption method used anywhere in your e-mail (doesn't matter whether it's in the subject header or the actual content, 
