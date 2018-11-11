@@ -10,7 +10,7 @@
 # This script will then copy the ppd file to the system, and restart cups, and start the cups deamon
 # see https://wiki.gentoo.org/wiki/Printing and https://forums.gentoo.org/viewtopic-t-22291-start-0.html
 
-cp -f ../printer_files/cupsd.conf /etc/cups/cupsd.conf
-cp -f ../printer_files/*.ppd /usr/share/cups/model/
+cp -f /mnt/*/printer_files/cupsd.conf /etc/cups/cupsd.conf
+cp -f /mnt/*/printer_files/*.ppd /usr/share/cups/model/
 /etc/init.d/cupsd restart
 systemctl start cups.service
