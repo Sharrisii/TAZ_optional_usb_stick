@@ -11,6 +11,7 @@ Ctrl + f: busybox finder
 Ctrl + o: obConf
 Ctrl + c: copy to clipboard
 Ctrl + v: paste from clipboard
+Ctrl + z: undo last action
 Ctrl + Alt + Del: LXTask
 Alt + F4: close window
 Super + f: file manager (PCManFM)
