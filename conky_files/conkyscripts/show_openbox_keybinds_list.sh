@@ -17,7 +17,7 @@ Alt + F4: close window
 Super + f: file manager (PCManFM)
 Super + t: terminal (Sakura)
 Super + e: editor (leafpad)
-Super + w: web browser (Pale Moon)
+Super + w: web browser (New Moon)
 Super + c: source code editor (Geany)
 PrtSc: snapshot (xwd)
 Super + x: eXit"""
