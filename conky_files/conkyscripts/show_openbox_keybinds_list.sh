@@ -6,10 +6,11 @@ Tab + rightarrow = next window
 Tab + leftarrow: previous window
 Ctrl + rightarrow: next desktop (pager)
 Ctrl + Shift + rightarrow: sent item to next desktop
-Ctrl + a: LXappearance
+Ctrl + a: select all
 Ctrl + f: busybox finder
 Ctrl + o: obConf
 Ctrl + c: copy to clipboard
+Ctrl + s: save
 Ctrl + v: paste from clipboard
 Ctrl + z: undo last action
 Ctrl + Alt + Del: LXTask
