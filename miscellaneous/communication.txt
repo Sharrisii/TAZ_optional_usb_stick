@@ -1,0 +1,7 @@
+This document contains some info on how to set up your communication with TAZ:
+The main package that is used for this is gajim.
+You can use this to communicate to other (linux) pc's that run gajim, or any other xmpp client 
+(see https://xmpp.org/software/clients.html )
+Given that even smartphones are able to run xmpp clients (i.e. AstraChat, Tigase Messenger), you should also 
+be able to communicate with cellphone users.
+Communicating with landlines is not possible.
