@@ -1,0 +1,16 @@
+TAZ github development:
+If using github to contribute to the development of TAZ, then the best way to do this is via git-scm.
+Using git via the palemoon browser is not recommended and often fails.
+So use git-scm (along with ghi) for contributing to the TAZ and TAZ_optional_usb_stick repo.
+Here's a quick review of the steps required:
+* first, open sakura and cd to the folder in which you want the TAZ_optional_usb_stick copied to
+* then do: git clone https://github.com/Sharrisii/TAZ_optional_usb_stick
+* then cd into the TAZ_optional_usb_stick folder
+* then cd to the folder in which there is the file(s) you want to modify, add or remove
+* then open PCManFM at the same folder, and make the file(s) you want to add or modify an existing file
+* then do: git add file1 file2 file3 ...
+* then do: git commit or git commit -a (if multiple files)
+* if you're the owner of the repo (which you are not) then you would normally do git push, however 
+since you're a contributor, you can only do a "git request-pull oneofsharrisiiscommitversiontostartoffrom https://github.com/yourproject master
+
+
