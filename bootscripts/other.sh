@@ -2,6 +2,19 @@
 # Place any other commands you still need in this file. This may include copying settings for gajim, linphone, claws-mail, ...
 # Also present here are the setting of the timezone of the lxpanel clock
 
+# Example code: dhcpcd
+# Use this only if you need to set up your internet connection (ethernet modems generally don't need it, config of these are
+# done via browser by typing in the ip, ie 192.168.1.1
+# see also: https://wiki.gentoo.org/wiki/Network_management_using_DHCPCD
+# and https://wiki.gentoo.org/wiki/Dhcpcd and https://wiki.gentoo.org/wiki/Handbook:X86/Full/Networking
+# cd /mnt/*/networking/
+# cp -f dhcpcd.conf /etc/
+
+# Example code: temporary addresses
+# Use this only if you want to turn on ipv6 temporary addresses
+# cd /mnt/*/networking/
+# cp -f local.conf /etc/sysctl.d/
+
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
 # Next, rename your profile text to default.txt and copy it from /.config/gajim/ to /mnt/*/profiles/gajim 
@@ -39,14 +52,6 @@ trust 5
 cd  /mnt/*/e-mails/gnupg_keys/otherskeys/
 gpg --import *.asc
 trust 3
-
-# Example code: dhcpcd
-# Use this only if you need to set up your internet connection (ethernet modems generally don't need it, config of these are
-# done via browser by typing in the ip, ie 192.168.1.1
-# see also: https://wiki.gentoo.org/wiki/Network_management_using_DHCPCD
-# and https://wiki.gentoo.org/wiki/Dhcpcd and https://wiki.gentoo.org/wiki/Handbook:X86/Full/Networking
-# cd /mnt/*/networking/
-# cp -f dhcpcd.conf /etc/
 
 # Example code: setting of timezone for the lxpanel clock
 # To see avilable timezones: ls /usr/share/zoneinfo
