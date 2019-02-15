@@ -1,3 +1,5 @@
 You can place any games you download from https://portablelinuxgames.org/ in this folder 
 and execute them directly on this usb stick. Since there's no installation, you can also easily delete them 
 after you get tired of the game you downloaded.
+When selecting games at https://portablelinuxgames.org/ remember that none of the boot setups (1 to 6) contains opengl or Vulkan and many games require these packages.
+So if you want to play games that require those packages, you'll need to hire VCTLabs to have them make you a custom 7th boot setup which includes these packages.
