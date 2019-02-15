@@ -50,6 +50,7 @@ claws-mail --alternate-config-dir /mnt/*/emails/.clawsconfig/
 cp -f /Mail/inbox/*.eml /mnt/*/emails/inbox/
 cp -f /Mail/draft/*.eml /mnt/*/emails/draft/
 cp -f /Mail/sent/*.eml /mnt/*/emails/sent/
+fi
 
 # Example code: gnupg public, private (and/or subkeys) import
 # See https://www.phildev.net/pgp/gpg_moving_keys.html
@@ -71,4 +72,5 @@ trust 3
 # see which video driver you need for your graphics card at https://packages.gentoo.org/categories/x11-drivers
 # Ask VCTLabs to include that video driver to the boot setup you'll order to accompany opengl/Vulkan and any of additional programs (i.e. Google Earth, ...) you need
 # also read https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide
-# Then, activate the code below:
+# Then, you may need to do some additional configs and the machine also needs to deactivate the vesa driver and activate your specific graphics card driver.
+# Do so by running the code below:
