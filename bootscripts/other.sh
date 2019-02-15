@@ -14,6 +14,8 @@
 # Use this only if you want to turn on ipv6 temporary addresses
 # cd /mnt/*/networking/
 # cp -f local.conf /etc/sysctl.d/
+# /etc/init.d/net.eth* restart
+# /etc/init.d/net.wlan* restart
 
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
