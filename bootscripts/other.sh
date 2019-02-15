@@ -2,6 +2,15 @@
 # Place any other commands you still need in this file. This may include copying settings for gajim, linphone, claws-mail, ...
 # Also present here are the setting of the timezone of the lxpanel clock
 
+# Example code: setting of timezone for the lxpanel clock
+# To see available timezones: ls /usr/share/zoneinfo
+# See also: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Base#Timezone
+echo "Europe/Brussels" > /etc/timezone
+emerge --config sys-libs/timezone-data
+# if you also want to change the time format, you'll need to specify it via LC_TIME
+# see https://wiki.gentoo.org/wiki/Localization/Guide#Environment_variables_for_locales
+# and https://forums.gentoo.org/viewtopic-t-977540-start-0.html
+
 # Example code: dhcpcd
 # Use this only if you need to set up your internet connection (ethernet modems generally don't need it, config of these are
 # done via browser by typing in the ip, ie 192.168.1.1
@@ -55,8 +64,11 @@ cd  /mnt/*/e-mails/gnupg_keys/otherskeys/
 gpg --import *.asc
 trust 3
 
-# Example code: setting of timezone for the lxpanel clock
-# To see avilable timezones: ls /usr/share/zoneinfo
-# See also: https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Base#Timezone
-echo "Europe/Brussels" > /etc/timezone
-emerge --config sys-libs/timezone-data
+# Example code: swap video driver from vesa to your specific graphics card driver and add hardware 3D acceleration
+# This is only useful if you want to play (portablegames4linux) games that require 3D acceleration or if you want to be able to
+# run other additional software that requires 3D acceleration (i.e. Google Earth, ...) on a custom boot setup you will order from VCTLabs
+# First, look up which video card is in your machine via lspci if you don't know this (see https://wiki.gentoo.org/wiki/Hardware_detection )
+# see which video driver you need for your graphics card at https://packages.gentoo.org/categories/x11-drivers
+# Ask VCTLabs to include that video driver to the boot setup you'll order to accompany opengl/Vulkan and any of additional programs (i.e. Google Earth, ...) you need
+# also read https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide
+# Then, activate the code below:
