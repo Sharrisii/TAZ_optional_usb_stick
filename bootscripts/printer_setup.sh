@@ -1,8 +1,6 @@
 #!/bin/bash
-# First, find out the computer port your printer sits on, and other info. Do so by one of these commands:
-# dmesg | grep -i print
-# lsusb
-# lpinfo -l -v
+# First, find out the computer port your printer sits on, and other info. Do so by the command:
+# echo "$(dmesg | grep -i Insert_Printer_Model_or_Manufacturer)"
 # Next, set up cups by pointing the browser to http://localhost:631 and following the instructions.
 # The cups web browser interface will then modify the etc/cups/cupsd.conf file. Place it in /printer_files/
 # Then, get your .ppd file for your printer from https://www.openprinting.org/printers and place it in /printer_files/
