@@ -37,7 +37,7 @@ gajim -p default -c /mnt/*/profiles/gajim/
 # Next, copy your profile file from /.linphonerc to /mnt/*/profiles/linphone 
 # See also http://write.flossmanuals.net/linphone/configuring/
 # The rest is handled by following code:
-cp /mnt/*/profiles/linphone/* /.linphonerc/ 
+cp -f /mnt/*/profiles/linphone/* /.linphonerc/ 
  
 # Example code: claws-mail
 # First, start claws-mail and enter the configuration settings for your (POP3 or IMAP) account
@@ -70,7 +70,16 @@ trust 3
 # run other additional software that requires 3D acceleration (i.e. Google Earth, ...) on a custom boot setup you will order from VCTLabs
 # First, look up which video card is in your machine via lspci if you don't know this (see https://wiki.gentoo.org/wiki/Hardware_detection )
 # see which video driver you need for your graphics card at https://packages.gentoo.org/categories/x11-drivers
-# Ask VCTLabs to include that video driver to the boot setup you'll order to accompany opengl/Vulkan and any of additional programs (i.e. Google Earth, ...) you need
+# If you need a video driver not yet part of TAZ (see /var/db/pkg/x11-drivers for available drivers present in TAZ) then ask VCTLabs to include that 
+# video driver to the boot setup you'll order to accompany Vulkan, and any additional programs (i.e. Google Earth, ...) you need
 # also read https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide
+# Next, open the file 10-dri.conf in the folder video_files on your optional USB stick in geany and edit it
 # Then, you may need to do some additional configs and the machine also needs to deactivate the vesa driver and activate your specific graphics card driver.
 # Do so by running the code below:
+# cd /usr/src/linux
+# make menuconfig
+# write following extra line at bottom of file /etc/conf.d/modules: modules="insert_your_required_driver"
+# cp -f /mnt/*/video_files/10-dri.conf /etc/X11/xorg.conf.d/
+##Following line is only needed if you have a pci card and it doesn't work correctlyFollowing line is only needed if you have a pci card and it doesn't work correctly
+##cp -f /mnt/*/video_files/10-pcimode.conf /etc/X11/xorg.conf.d/
+# You can run the commands glxinfo and glxgears after doing all this to see how well it performs now
