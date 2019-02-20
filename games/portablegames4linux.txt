@@ -1,6 +1,7 @@
 You can place any games you download from https://portablelinuxgames.org/ in this folder 
 and execute them directly on this usb stick. Since there's no installation, you can also easily delete them 
 after you get tired of the game you downloaded.
-When selecting games at https://portablelinuxgames.org/ remember that none of the boot setups (1 to 6) contains opengl or Vulkan and many games require these packages.
+When selecting games at https://portablelinuxgames.org/ remember that none of the boot setups (1 to 6) contain Vulkan and many games require these packages.
 So if you want to play games that require those packages, you'll need to hire VCTLabs to have them make you a custom 7th boot setup which includes these packages.
-Also make sure you activate the appropriate section of code at /bootscripts/other.sh
+Also make sure you activate the appropriate section of code at /bootscripts/other.sh so as to change the video driver to a driver specifically for your graphics card, ...
+Note that some video card drivers are not available in TAZ so if you want any of those request VCTLabs to have them integrated in your custom 7th boot setup.
