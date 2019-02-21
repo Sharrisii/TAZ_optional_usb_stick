@@ -10,6 +10,8 @@ The functions of the USB stick are the following:
 * load a user-set screen resolution (!)
 * load a user-set keymap (!)
 * set the local timezone for the lxpanel clock
+* change some networking settings (!)
+* deactivate vesa and activate a different video driver (when using the custom boot setup 7)
 * load a customized openbox menu and openbox rc file (!), remove the menu button on lxpanel as this menubutton then becomes redundant (!)
 * load gajim, linphone and claws-mail config settings
 * load a customized conky system monitor panel, openbox keybinds list panel, currency and commodity rates & weather & news panel
