@@ -70,6 +70,8 @@ trust 3
 # run other additional software that requires 3D acceleration (i.e. Google Earth, ...) on a custom boot setup you will order from VCTLabs
 # First, look up which video card is in your machine via lspci if you don't know this (see https://wiki.gentoo.org/wiki/Hardware_detection )
 # see which video driver you need for your graphics card at https://packages.gentoo.org/categories/x11-drivers
+# There is more info on what model graphics card is supported by which driver at
+# https://wiki.gentoo.org/wiki/AMDGPU , https://wiki.gentoo.org/wiki/Radeon , https://wiki.gentoo.org/wiki/NVidia , https://wiki.gentoo.org/wiki/Intel and other articles
 # If you need a video driver not yet part of TAZ (see /var/db/pkg/x11-drivers for available drivers present in TAZ) then ask VCTLabs to include that 
 # video driver to the boot setup you'll order to accompany Vulkan, and any additional programs (i.e. Google Earth, ...) you need
 # also read https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide
