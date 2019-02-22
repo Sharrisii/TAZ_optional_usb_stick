@@ -76,11 +76,23 @@ trust 3
 # video driver to the boot setup you'll order to accompany Vulkan, and any additional programs (i.e. Google Earth, ...) you need
 # also read https://wiki.gentoo.org/wiki/Xorg/Hardware_3D_acceleration_guide
 # Next, open the file 10-dri.conf in the folder video_files on your optional USB stick in geany and edit it
-# Then, you may need to do some additional configs and the machine also needs to deactivate the vesa driver and activate your specific graphics card driver.
-# Do so by running the code below:
+# Then, you may need to do some additional configs (including those in the code below) and the machine also needs to deactivate the vesa driver and activate your specific graphics card driver.
+# Read following article for more info on the use flag updating: https://wiki.gentoo.org/wiki/Handbook:Parts/Working/USE#Adapting_the_entire_system_to_the_new_USE_flags
+# For the activating and deactivating of drivers, this is done via modules, see https://wiki.gentoo.org/wiki/Kernel_Modules
+# The optional usb stick needs to be inserted to the machine prior to boot so that during boot it can fetch the data with the modules (required graphics driver) from the usb stick
+# Run the code below:
+# cd /etc/conf.d/
+# modules="insert_your_required_driver_here" >> modules.txt
+# cd /etc/portage
+# VIDEO_CARDS="insert_your_video_card_here" >> make.conf
+# USE="amdgpu" emerge x11-libs/libdrm
+# USE="intel" emerge x11-libs/libdrm
+# USE="nouveau" emerge x11-libs/libdrm
+# USE="radeon" emerge x11-libs/libdrm
+# USE="glamor" emerge x11-drivers/xf86-video-ati
+# emerge --update --deep --newuse @world
 # cd /usr/src/linux
-# make menuconfig
-# write following extra line at bottom of file /etc/conf.d/modules: modules="insert_your_required_driver"
+# make menuconfig 
 # cp -f /mnt/*/video_files/10-dri.conf /etc/X11/xorg.conf.d/
 ##Following line is only needed if you have a pci card and it doesn't work correctlyFollowing line is only needed if you have a pci card and it doesn't work correctly
 ##cp -f /mnt/*/video_files/10-pcimode.conf /etc/X11/xorg.conf.d/
