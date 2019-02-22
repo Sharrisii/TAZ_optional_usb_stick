@@ -89,6 +89,10 @@ trust 3
 # USE="intel" emerge x11-libs/libdrm
 # USE="nouveau" emerge x11-libs/libdrm
 # USE="radeon" emerge x11-libs/libdrm
+# USE="intel" emerge x11-libs/libva
+# USE="nouveau" emerge x11-libs/libva
+# USE="nvidia" emerge x11-libs/libva
+# USE="i965" emerge x11-libs/libva
 # USE="glamor" emerge x11-drivers/xf86-video-ati
 # emerge --update --deep --newuse @world
 # cd /usr/src/linux
