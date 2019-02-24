@@ -31,13 +31,6 @@ emerge --config sys-libs/timezone-data
 # Next, rename your profile text to default.txt and copy it from /.config/gajim/ to /mnt/*/profiles/gajim 
 # The rest is handled by following code:
 gajim -p default -c /mnt/*/profiles/gajim/
-
-# Example code: linphone
-# First, start linphone and enter the configuration settings for your messenger account(s)
-# Next, copy your profile file from /.linphonerc to /mnt/*/profiles/linphone 
-# See also http://write.flossmanuals.net/linphone/configuring/
-# The rest is handled by following code:
-cp -f /mnt/*/profiles/linphone/* /.linphonerc/ 
  
 # Example code: claws-mail
 # First, start claws-mail and enter the configuration settings for your (POP3 or IMAP) account
