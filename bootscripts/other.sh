@@ -65,6 +65,13 @@ cd  /mnt/*/e-mails/gnupg_keys/otherskeys/
 gpg --import *.asc
 trust 3
 
+# Example code: git profile setting
+cd /mnt/*/profiles/git
+cp -f .gitconfig /home/taz
+
+# Example code: ghi use your ghi.token for connecting to git
+ghi config --auth tokennumber ?
+
 # Example code: swap video driver from vesa to your specific graphics card driver and add hardware 3D acceleration
 # This is only useful if you want to play (portablegames4linux) games that require 3D acceleration or if you want to be able to
 # run other additional software that requires 3D acceleration (i.e. Google Earth, ...) on a custom boot setup you will order from VCTLabs
