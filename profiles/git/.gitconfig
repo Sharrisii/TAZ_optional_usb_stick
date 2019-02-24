@@ -1,0 +1,7 @@
+[user]
+	name = John Doe
+	email = johndoe@example.com
+	signingkey = 0A46826A
+
+[ghi]
+	token = 036a0402c51c9a3f7de405793d12cffe6ae354d5
