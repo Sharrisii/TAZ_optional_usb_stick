@@ -4,6 +4,7 @@
 # see https://wiki.gentoo.org/wiki/Xorg/Guide#Configuring_the_keyboard
 # and https://wiki.gentoo.org/wiki/Keyboard_layout_switching#Using_setxkbmap
 # To see your current set keymap (in X), use the command "xkeyboard-config"
+# Another option is to just find your keyboard on https://en.wikipedia.org/wiki/IBM_PC_keyboard and then enter the correct keymap based on that info
 
 # the command below sets the belgian latin1 version of the azerty keyboard;
 # see /usr/share/kbd/keymaps/i386/azerty
