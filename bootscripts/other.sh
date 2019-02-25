@@ -59,6 +59,15 @@ gpg --import *.asc
 trust 3
 
 # Example code: git and ghi profile setting
+# For setting general identity:
+# read https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+# You no longer need to do git config --global user.name "John Doe" or git config --global user.email johndoe@example.com since already set in .gitconfig file. 
+# However, do change this data to your actual e-mail and user name in the .gitconfig file.
+# For github PGP: read how to use this at https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
+# Also check whether a PGP key has been included to your github account (via web browser -> github.com -> your settings)
+# For ghi token: read through https://github.com/stephencelis/ghi/wiki/FAQ
+# You no longer need to do git config --global ghi.token 036a0402c51c9a3f7de405793d12cffe6ae354d5 since already set in .gitconfig file
+# You do need to change the token in the .gitconfig file to the token you first need to make yourself via your github account.
 cd /mnt/*/profiles/git
 cp -f .gitconfig /home/taz
 
