@@ -13,7 +13,7 @@ The functions of the USB stick are the following:
 * change some networking settings (!)
 * deactivate vesa and activate a different video driver (when using the custom boot setup 7)
 * load a customized openbox menu and openbox rc file (!), remove the menu button on lxpanel as this menubutton then becomes redundant (!)
-* load gajim, linphone and claws-mail config settings
+* load gajim, git and claws-mail config settings
 * load a customized conky system monitor panel, openbox keybinds list panel, currency and commodity rates & weather & news panel
 * load configuration files for the printer (when using boot setup 2)
 * load configuration files for the scanner (when using boot setup 5)
