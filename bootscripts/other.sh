@@ -93,7 +93,8 @@ cp -f .gitconfig /home/taz
 # USE="glamor" emerge x11-drivers/xf86-video-ati
 # emerge --update --deep --newuse @world
 # cd /usr/src/linux
-# make menuconfig 
+# make menuconfig
+# make && make install && make modules_install
 # cp -f /mnt/*/video_files/10-dri.conf /etc/X11/xorg.conf.d/
 ##Following line is only needed if you have a pci card and it doesn't work correctlyFollowing line is only needed if you have a pci card and it doesn't work correctly
 ##cp -f /mnt/*/video_files/10-pcimode.conf /etc/X11/xorg.conf.d/
