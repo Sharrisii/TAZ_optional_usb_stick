@@ -68,6 +68,7 @@ trust 3
 # For ghi token: read through https://github.com/stephencelis/ghi/wiki/FAQ
 # You no longer need to do git config --global ghi.token 036a0402c51c9a3f7de405793d12cffe6ae354d5 since already set in .gitconfig file
 # You do need to change the token in the .gitconfig file to the token you first need to make yourself via your github account.
+# Make sure you always run ghi in sandbox mode (using sandbox sakura -e ghi), since it is a ruby gem !
 cd /mnt/*/profiles/git
 cp -f .gitconfig /home/taz
 
