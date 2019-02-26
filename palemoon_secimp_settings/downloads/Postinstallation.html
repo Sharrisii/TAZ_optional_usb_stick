@@ -127,8 +127,10 @@
 	If you also want to add an (unsecure form of) encryption to your e-mails, for example to prevent spiders of reading and collecting data from your e-mails 
 	in an automated way, you can use <a href="https://www.ghacks.net/2009/07/11/encrypting-email-in-claws-mail/">Claws Mails with PGP</a>. GPG is installed in TAZ, together with a script 
 	that automatically imports your own private/public keys (stored on the optional usb stick under the folder /e-mails/gnupg_keys/mykeys/ ). So, for this to work, you just need to generate your key 
-	pair using the terminal, export your keys and then place them in the /e-mails/gnupg_keys/mykeys/ folder. Also place your friends public keys in the /e-mails/gnupg_keys/otherskeys/ folder. 
-	Read through <a href="https://wiki.gentoo.org/wiki/Project:Gentoo-keys/Generating_GLEP_63_based_OpenPGP_keys">a manual on PGP and GLEP63</a>.
+	pair using the terminal, export your keys and then place them in the /e-mails/gnupg_keys/mykeys/ folder. Also place your friends public keys in the /e-mails/gnupg_keys/otherskeys/ folder.
+	Besides using it in e-mail, you can also use it in github, gentoo packages, ...
+	Read through <a href="https://wiki.gentoo.org/wiki/Project:Gentoo-keys/Generating_GLEP_63_based_OpenPGP_keys">a manual on PGP and GLEP 63</a>.
+	Also learn how to use it (encryption and decryption commands, ...) by reading through a <a href="https://www.dewinter.com/gnupg_howto/english/GPGMiniHowto.html">howto</a>.
 	We must note that asymmetric encryption (which PGP uses) is much more complicated then symmetric encryption. So one alternative to using high-end, asymmetric encryption like gpg is to just use a tool that encrypts your message text 
 	which you can then copy/paste right into your e-mail, and put the password and the encryption method used in the subject header (which is the part of the message that is not encrypted). Obviously, any human can open this, but it should 
 	prevent spiders of reading the mails, which could result in much less spam arriving in your e-mail. Some tools you could use include openssl (echo "texttoencrypt" | openssl enc -encrytionmethod )
