@@ -9,7 +9,8 @@
 # usermod -aG scanner taz
 # usermod -aG scanner root
 
-# Next, detect the scanner with the sane-find-scanner command, 
+# Next, detect the scanner with the sane-find-scanner command, you should get something like this:
+# "found USB scanner (vendor=0x01aa [brand], product=0x0001 [product], chip=GL848+) at libusb:001:002"
 
 # Then, open up /etc/sane.d/your_scanner_brand.conf and then add the vendor and the product number you got 
 # with the sane-find-scanner command. Add these numbers after the port name on which your scanner is attached; 
@@ -18,7 +19,6 @@
 # Copy your_scanner_brand.conf to the usb stick folder /miscellaneous/ and have this script run the command below by outcommenting 
 # the following line in this script:
 # cp -f /mnt/*/miscellaneous/your_scanner_brand.conf /etc/sane.d/your_scanner_brand.conf
-# Remember: only do this if it's a usb scanner.
 
 # In some cases, it may be necessary to also change the file /etc/sane.d/dll.conf: 
 # manually remove the hashtag before the words "example-backend" of your listed brand of scanner.
