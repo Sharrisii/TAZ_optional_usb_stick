@@ -12,7 +12,9 @@
 # Next, detect the scanner with the sane-find-scanner command, 
 
 # Then, open up /etc/sane.d/your_scanner_brand.conf and then add the vendor and the product number you got 
-# with the sane-find-scanner command. The vendor and product number will look similar like this: 0x01aa 0x0001
+# with the sane-find-scanner command. Add these numbers after the port name on which your scanner is attached; 
+# i.e. if usb then type usb and then add the vendor and product number.
+# The vendor and product number will look similar like this: 0x01aa 0x0001
 # Copy your_scanner_brand.conf to the usb stick folder /miscellaneous/ and have this script run the command below by outcommenting 
 # the following line in this script:
 # cp -f /mnt/*/miscellaneous/your_scanner_brand.conf /etc/sane.d/your_scanner_brand.conf
