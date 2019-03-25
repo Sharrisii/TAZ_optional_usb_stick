@@ -21,9 +21,9 @@
 # cp -f /mnt/*/miscellaneous/your_scanner_brand.conf /etc/sane.d/your_scanner_brand.conf
 
 # In some cases, it may be necessary to also change the file /etc/sane.d/dll.conf: 
-# manually remove the hashtag before the words "example-backend" of your listed brand of scanner.
-# then, copy the dll.conf to the usb stick folder /miscellaneous/ and have this script run the commands 
-# below by outcommenting the following line in this script:
+# manually remove the hashtag before the words "example-backend" of your listed brand of scanner (if not already the case).
+# then (if you needed to uncomment your listed brand of scanner), copy the dll.conf to the usb stick folder /miscellaneous/ and 
+# have this script run the commands below by outcommenting the following line in this script:
 # cp -f /mnt/*/miscellaneous/dll.conf /etc/sane.d/dll.conf
 
-# To do any scanning, use the scanimage -L command as TAZ does not have a front-end for scanning.
+# To do any actual scanning, use the scanimage -L command as TAZ does not have a front-end for scanning.
