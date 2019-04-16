@@ -3,5 +3,23 @@ The main package that is used for this is gajim.
 You can use this to communicate to other (linux) pc's that run gajim, or any other xmpp client 
 (see https://xmpp.org/software/clients.html )
 Given that even smartphones are able to run xmpp clients (i.e. AstraChat, Tigase Messenger), you should also 
-be able to communicate with cellphone users.
+be able to communicate with cellphone (smartphone) users.
 Communicating with landlines is not possible.
+You can also communicate with dumphones through the emailaccount 2 sms technique. To do this:
+Combine your recipient's 10 digit phone number with one of the example domains below (domain depending on the cellphone 
+provider your friend uses). If your friend's domain hasn't been listed, then contact your friends cellphone provider 
+and ask the domain.
+
+To send an email through an sms (i.e. if your friend wants to reach you from his dumphone this way), he will need to know the 
+number to type in to be able to reach you (this will be a weird number). He can know this once he receives an SMS (through email)
+from you. More info at https://lifehacker.com/how-can-i-send-an-email-via-text-message-5506326
+
+Examples of cellphone provider domains:
+Alltel: @message.alltel.com (or @mms.alltelwireless.com for picture messages)
+AT&T: @text.att.net
+Sprint: @messaging.sprintpcs.com
+T-Mobile: @tmomail.net
+Verizon: @vtext.com (or @vzwpix.com for photos and video)
+Virgin Mobile: phonenumber@vmobl.com
+Nextel: phonenumber@messaging.nextel.com
+US Cellular: phonenumber@mms.uscc.net
