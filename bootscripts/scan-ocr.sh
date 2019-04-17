@@ -9,22 +9,19 @@
 # Script:
 
 #Ask the input filename to the user and update the value in /home/taz/.gimp-2.8/scripts/scan-ocr.scm
-use text: "Please enter the input image file (full path)"
-scan_ocr_input_image_filename=
+read -p "Please enter the input image file (full path) :" scan_ocr_input_image_filename
 Then, in the /home/taz/.gimp-2.8/scripts/scan-ocr.scm script, alter the "filename filename" with
 the input image path entered by user (is the second filename for
 additional files ? If so, we can drop that.)
 Use sed for the altering.
 
 #Ask the treshold values to the user and update the value in /home/taz/.gimp-2.8/scripts/scan-ocr.scm
-use text: "Please enter the low and high treshold values separated by a space"
-low_high_treshold_values=
+read -p "Please enter the low treshold value" scan_ocr_low_treshold_value
+read -p "Please enter the high treshold value" scan_ocr_high_treshold_value
 Then, in the scan-ocr.scm script, alter these with sed.
 This all need to be added to /home/taz/.gimp-2.8/scripts/scan-ocr.scm
 
 #Ask in what the language the scanned page is written and carry out the required actions
-use text: "Please enter in what language the scanned page is written"
-language_inputimage=
-gimp -i -b '(tesseract "image.jpg")' -b '(gimp-quit 0)'
-tesseract $scan_ocr_input_image_filename tesseract-ocr-output.txt -l $language_inputimage
+read -p "Please enter in what language the scanned page is written" scan_ocr_language_inputimage
+gimp -i -b '(tesseract "$scan_ocr_input_image_filename" $scan_ocr_low_treshold_value $scan_ocr_high_treshold_value $language_inputimage)'
 leafpad tesseract-ocr-output.txt
