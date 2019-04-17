@@ -40,3 +40,4 @@
 # Script:
 gimp -i -b '(tesseract "image.jpg")' -b '(gimp-quit 0)'
 tesseract command
+leafpad tesseract-ocr-output.txt
