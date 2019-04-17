@@ -27,3 +27,15 @@
 # cp -f /mnt/*/miscellaneous/dll.conf /etc/sane.d/dll.conf
 
 # To do any actual scanning, use the scanimage -L command as TAZ does not have a front-end for scanning.
+
+# ------------------------------------------------------------------------------------------------------------------------------
+# The section below is for the ocr-scanning function
+# When started, the script will asks the input file (full path), and will then show you the OCR text in leafpad.
+#You can copy/paste the text then for further use.
+#Input: most image file formats are supported, so use a file with whatever image extension (but which has been prepared with the gimp, in batch mode -part of the script below-).
+#Output: specify a filename followed by .txt, .pdf, .hocr, or .xml
+#Read https://github.com/tesseract-ocr/tesseract/wiki/ , https://www.gimp.org/tutorials/Basic_Batch/ , https://www.linuxjournal.com/article/9676 for more details.
+#Pagesegmode (with -psm ) and configfile are not supported.
+#Script:
+gimp -i -b '(tesseract "image.jpg")' -b '(gimp-quit 0)'
+tesseract command
