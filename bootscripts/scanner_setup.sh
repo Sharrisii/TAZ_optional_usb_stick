@@ -30,7 +30,7 @@
 
 # ------------------------------------------------------------------------------------------------------------------------------
 # The section below is for the ocr-scanning function
-# When (using , the script will asks the image input file (full path), the treshold low and high value (depends on your scanner) and will then show you the OCR text in leafpad.
+# When starting (via lxpanel menu), the script will asks the image input file (full path), the treshold low and high value (depends on your scanner) and will then show you the OCR text in leafpad.
 # The exact value to use for the low / high treshold value can be found by trying out a scan treshold in the gimp first and seeing gives best result, values should be between 0 and 127 for low and between 127 and 255 for high)
 # You can copy/paste the text then for further use.
 # Input: most image file formats are supported, so use a file with whatever image extension (but which has been prepared with the gimp, in batch mode -part of the script below-).
