@@ -7,21 +7,24 @@
 # Read https://github.com/tesseract-ocr/tesseract/wiki/ , https://www.gimp.org/tutorials/Basic_Batch/ , https://www.linuxjournal.com/article/9676 for more details.
 # Pagesegmode (with -psm ) and configfile are not supported.
 # Script:
-if [ -f /usr/lib/gimp/ ]; 
-then
-copy file with info below to /usr/share/applications:
-[Desktop Entry]
-Type=Application
-Icon=leafpad
-Name=Scan-ocr
-Comment=Scan a page (OCR) and load text into leafpad
-Categories=Graphics;2DGraphics;RasterGraphics;GTK;
-Exec= /mnt/*/additional_scripts/scan-ocr.sh
-StartupNotify=true
-Terminal=true
-MimeType=inode/directory;
-fi
+
+#Ask the input filename to the user and update the value in /home/taz/.gimp-2.8/scripts/scan-ocr.scm
+use text: "Please enter the input image file (full path)"
+scan_ocr_input_image_filename=
+Then, in the /home/taz/.gimp-2.8/scripts/scan-ocr.scm script, alter the "filename filename" with
+the input image path entered by user (is the second filename for
+additional files ? If so, we can drop that.)
+Use sed for the altering.
+
+#Ask the treshold values to the user and update the value in /home/taz/.gimp-2.8/scripts/scan-ocr.scm
+use text: "Please enter the low and high treshold values separated by a space"
+low_high_treshold_values=
+Then, in the scan-ocr.scm script, alter these with sed.
+This all need to be added to /home/taz/.gimp-2.8/scripts/scan-ocr.scm
+
+#Ask in what the language the scanned page is written and carry out the required actions
+use text: "Please enter in what language the scanned page is written"
+language_inputimage=
 gimp -i -b '(tesseract "image.jpg")' -b '(gimp-quit 0)'
-tesseract command
+tesseract $scan_ocr_input_image_filename tesseract-ocr-output.txt -l $language_inputimage
 leafpad tesseract-ocr-output.txt
-done
