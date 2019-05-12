@@ -9,5 +9,6 @@ The security improvements this package provide include:
 - user agent overrider 0.2.4 (https://addons.mozilla.org/en-US/firefox/addon/user-agent-overrider/versions/)
 - belgium-eid 1.0.23 (https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/ )
 - change_referer_button-0.44-fx+tb (https://addons.mozilla.org/en-US/firefox/addon/change-referer-button/versions/)
+- google translator for Pale Moon (https://addons.palemoon.org/addon/gtranslator-moon-edition/)
 * adding of a Postinstallation.html to your /downloads/ folder and setting the start page of palemoon to
 that html page
