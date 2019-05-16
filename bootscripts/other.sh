@@ -31,7 +31,9 @@ emerge --config sys-libs/timezone-data
 # Next, rename your profile text to default.txt and copy it from /.config/gajim/ to /mnt/*/profiles/gajim 
 # The rest is handled by following code:
 gajim -p default -c /mnt/*/profiles/gajim/
-cp -f /mnt/*/plugins/gajim/* /home//taz/.local/share/gajim/plugins/
+# If you want to copy over any gajim plugins from https://dev.gajim.org/gajim/gajim-plugins/tree/master
+# then place them in /plugins/gajim/
+cp -f /mnt/*/plugins/gajim/* /home/taz/.local/share/gajim/plugins/
  
 # Example code: claws-mail
 # First, start claws-mail and enter the configuration settings for your (POP3 or IMAP) account
