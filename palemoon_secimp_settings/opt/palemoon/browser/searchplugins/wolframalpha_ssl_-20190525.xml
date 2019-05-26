@@ -5,14 +5,14 @@
 	Author: Sharrisii
 	Version: 20190525 (May 25, 2019)
 	Description: Wolfram Alpha is a search engine that allow for broader searches and computational power when it comes to math. This search bar add-on utilizes SSL to protect searches between You and Wolfram Alpha.
-	Privacy Policy: https://wolframalpha.com/eng/privacy-policy.html
+	Privacy Policy: https://www.wolfram.com/legal/privacy/wolfram/
 	Country code: en-US
 
 -->
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
 <ShortName>Wolfram Alpha (SSL)</ShortName>
-<Description>Wolfram Alpha is a search engine that allow for broader searches and computational power when it comes to math. This search bar add-on utilizes SSL to protect searches between You and Ixquick.</Description>
+<Description>Wolfram Alpha is a search engine that allow for broader searches and computational power when it comes to math. This search bar add-on utilizes SSL to protect searches between You and Wolfram Alpha.</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <Image width="16" height="16" type="image/x-icon">https://wolframalpha.com/favicon.ico</Image>
 <Url type="text/html" method="POST" template="https://wolframalpha.com/do/metasearch.pl">

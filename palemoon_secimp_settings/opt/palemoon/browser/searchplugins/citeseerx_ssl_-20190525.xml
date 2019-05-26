@@ -4,7 +4,7 @@
 	"CiteSeerX (SSL)" Firefox Search Add-on
 	Author: Sharrisii
 	Version: 20190525 (May 25, 2019)
-	Description: CiteSeerX is a search engine for searching books, research papers,... This search bar add-on utilizes SSL to protect searches between You and Ixquick.
+	Description: CiteSeerX is a search engine for searching books, research papers,... This search bar add-on utilizes SSL to protect searches between You and CiteSeerX.
 	Privacy Policy: http://csxstatic.ist.psu.edu/privacy-policy/
 	Country code: en-US
 
@@ -12,7 +12,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
 <ShortName>CiteSeerX (SSL)</ShortName>
-<Description>CiteSeerX is a search engine for searching books, research papers,... This search bar add-on utilizes SSL to protect searches between You and Ixquick.</Description>
+<Description>CiteSeerX is a search engine for searching books, research papers,... This search bar add-on utilizes SSL to protect searches between You and CiteSeerX.</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <Image width="16" height="16" type="image/x-icon">https://citeseerx.ist.psu.edu/favicon.ico</Image>
 <Url type="text/html" method="POST" template="https://citeseerx.ist.psu.edu/do/metasearch.pl">
