@@ -14,11 +14,10 @@
 <ShortName>Wolfram Alpha (SSL)</ShortName>
 <Description>Wolfram Alpha is a search engine that allow for broader searches and computational power when it comes to math. This search bar add-on utilizes SSL to protect searches between You and Wolfram Alpha.</Description>
 <InputEncoding>UTF-8</InputEncoding>
-<Image width="16" height="16" type="image/x-icon">https://wolframalpha.com/favicon.ico</Image>
-<Url type="text/html" method="POST" template="https://wolframalpha.com/do/metasearch.pl">
-   <Param name="query" value="{searchTerms}"/>
+<Image width="16" height="16" type="image/x-icon">https://www.wolframalpha.com/favicon.ico</Image>
+<Url type="text/html" method="POST" template="https://www.wolframalpha.com/input/?">
+   <Param name="i" value="{searchTerms}"/>
    <Param name="cat" value="web"/>
-   <Param name="language" value="english"/>
 </Url>
-<moz:SearchForm>https://wolframalpha.com/</moz:SearchForm>
+<moz:SearchForm>https://www.wolframalpha.com/</moz:SearchForm>
 </OpenSearchDescription>
