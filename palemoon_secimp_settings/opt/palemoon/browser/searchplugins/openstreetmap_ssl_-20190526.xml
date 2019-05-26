@@ -15,10 +15,9 @@
 <Description>Openstreetmap is a geographical maps database. This search bar add-on utilizes SSL to protect searches between You and Openstreetmap.</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <Image width="16" height="16" type="image/x-icon">https://www.openstreetmap.org/favicon.ico</Image>
-<Url type="text/html" method="POST" template="https://www.openstreetmap.org/do/metasearch.pl">
+<Url type="text/html" method="GET" template="https://www.openstreetmap.org/search">
    <Param name="query" value="{searchTerms}"/>
-   <Param name="cat" value="web"/>
-   <Param name="language" value="english"/>
+   <Param name="xhr" value="1"/>
 </Url>
 <moz:SearchForm>https://www.openstreetmap.org</moz:SearchForm>
 </OpenSearchDescription>

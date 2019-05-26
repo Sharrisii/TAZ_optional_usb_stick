@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-	"Startpage Pics (SSL)" Firefox Search Plugin
+	"Startpage Images (SSL)" Firefox Search Plugin
 	Author: Sharrisii
 	Version: 20190526 (May 26, 2019)
 	Description: Startpage is a search engine that does not collect or share personally identifiable information. This search bar extension utilizes SSL to protect transmissions between You and Startpage.
@@ -11,14 +11,18 @@
 -->
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-<ShortName>Startpage Pics (SSL)</ShortName>
+<ShortName>Startpage Images (SSL)</ShortName>
 <Description>Startpage is a search engine that does not collect or share personally identifiable information. This search bar extension utilizes SSL to protect transmissions between You and Startpage.</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <Image width="16" height="16" type="image/x-icon">https://startpage.com/favicon.ico</Image>
-<Url type="text/html" method="POST" template="https://startpage.com/en/pics/do/metasearch.pl">
-   <Param name="query" value="{searchTerms}"/>
-   <Param name="cat" value="web"/>
+<Url type="text/html" method="POST" template="https://startpage.com/do/search">
+   <Param name="cat" value="pics"/>
+   <Param name="abp" value="-1"/>
    <Param name="language" value="english"/>
+   <Param name="cmd" value="process_search"/>
+   <Param name="query" value="{searchTerms}"/>
+   <Param name="t" value="default"/>
+   <Param name="hid_cat" value="web"/>
 </Url>
 <moz:SearchForm>https://www.startpage.com/en/pics.html</moz:SearchForm>
 </OpenSearchDescription>

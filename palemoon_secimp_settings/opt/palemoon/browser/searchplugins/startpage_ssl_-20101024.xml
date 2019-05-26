@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-	"Startpage (SSL)" Firefox Search Plugin
+	"Startpage Web (SSL)" Firefox Search Plugin
 	Author: SSL Search Boxes
 	Version: 20101024 (October 24, 2010)
 	Description: Startpage is a search engine that does not collect or share personally identifiable information. This search bar extension utilizes SSL to protect transmissions between You and Startpage.
@@ -11,14 +11,18 @@
 -->
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-<ShortName>Startpage (SSL)</ShortName>
+<ShortName>Startpage Web (SSL)</ShortName>
 <Description>Startpage is a search engine that does not collect or share personally identifiable information. This search bar extension utilizes SSL to protect transmissions between You and Startpage.</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <Image width="16" height="16" type="image/x-icon">https://startpage.com/favicon.ico</Image>
-<Url type="text/html" method="POST" template="https://startpage.com/do/metasearch.pl">
+<Url type="text/html" method="POST" template="https://startpage.com/do/search">
    <Param name="query" value="{searchTerms}"/>
    <Param name="cat" value="web"/>
+   <Param name="cmd" value="process_search"/>
    <Param name="language" value="english"/>
+   <Param name="engine0" value="v1all"/>
+   <Param name="pg" value="0"/>
+   <Param name="abp" value="-1"/>
 </Url>
 <moz:SearchForm>https://startpage.com/</moz:SearchForm>
 </OpenSearchDescription>

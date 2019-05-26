@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-	"CiteSeerX (SSL)" Firefox Search Add-on
+	"CiteSeerX Web (SSL)" Firefox Search Add-on
 	Author: Sharrisii
 	Version: 20190525 (May 25, 2019)
 	Description: CiteSeerX is a search engine for searching books, research papers,... This search bar add-on utilizes SSL to protect searches between You and CiteSeerX.
@@ -11,14 +11,14 @@
 -->
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-<ShortName>CiteSeerX (SSL)</ShortName>
+<ShortName>CiteSeerX Web (SSL)</ShortName>
 <Description>CiteSeerX is a search engine for searching books, research papers,... This search bar add-on utilizes SSL to protect searches between You and CiteSeerX.</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <Image width="16" height="16" type="image/x-icon">https://citeseerx.ist.psu.edu/favicon.ico</Image>
-<Url type="text/html" method="POST" template="https://citeseerx.ist.psu.edu/do/metasearch.pl">
-   <Param name="query" value="{searchTerms}"/>
-   <Param name="cat" value="web"/>
-   <Param name="language" value="english"/>
+<Url type="text/html" method="POST" template="https://citeseerx.ist.psu.edu/search">
+   <Param name="q" value="{searchTerms}"/>
+   <Param name="sort" value="rlv, cite, date, ascdate"/>
+   <Param name="t" value="doc"/>
 </Url>
 <moz:SearchForm>https://citeseerx.ist.psu.edu/</moz:SearchForm>
 </OpenSearchDescription>

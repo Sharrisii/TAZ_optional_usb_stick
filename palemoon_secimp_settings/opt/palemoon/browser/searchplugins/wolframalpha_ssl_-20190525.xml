@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-	"Wolfram Alpha (SSL)" Firefox Search Add-on
+	"Wolfram Alpha Web (SSL)" Firefox Search Add-on
 	Author: Sharrisii
 	Version: 20190525 (May 25, 2019)
 	Description: Wolfram Alpha is a search engine that allow for broader searches and computational power when it comes to math. This search bar add-on utilizes SSL to protect searches between You and Wolfram Alpha.
@@ -11,13 +11,12 @@
 -->
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-<ShortName>Wolfram Alpha (SSL)</ShortName>
+<ShortName>Wolfram Alpha Web (SSL)</ShortName>
 <Description>Wolfram Alpha is a search engine that allow for broader searches and computational power when it comes to math. This search bar add-on utilizes SSL to protect searches between You and Wolfram Alpha.</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <Image width="16" height="16" type="image/x-icon">https://www.wolframalpha.com/favicon.ico</Image>
-<Url type="text/html" method="POST" template="https://www.wolframalpha.com/input/?">
+<Url type="text/html" method="GET" template="https://www.wolframalpha.com/input/autocomplete.jsp">
    <Param name="i" value="{searchTerms}"/>
-   <Param name="cat" value="web"/>
 </Url>
 <moz:SearchForm>https://www.wolframalpha.com/</moz:SearchForm>
 </OpenSearchDescription>

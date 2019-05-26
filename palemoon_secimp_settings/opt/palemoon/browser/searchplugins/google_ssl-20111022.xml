@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-	"Google (SSL)" Firefox Search Add-on
+	"Google Web (SSL)" Firefox Search Add-on
 	Author: SSL Search Boxes
 	Version: 20111023 (October 23, 2011)
 	Description: Google is the world's most popular search engine. This search bar add-on utilizes SSL to protect searches between You and Google, but it does not make you anonymous (remember, Google logs and retains all search queries and IP addresses).
@@ -12,7 +12,7 @@
 -->
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-<ShortName>Google (SSL)</ShortName>
+<ShortName>Google Web (SSL)</ShortName>
 <Description>Google is the world's most popular search engine. This search bar add-on utilizes SSL to protect searches between You and Google, but it does not make you anonymous (remember, Google logs and retains all search queries and IP addresses).</Description>
 <InputEncoding>UTF-8</InputEncoding>
 <Image width="16" height="16" type="image/x-icon">https://www.google.com/favicon.ico</Image>
