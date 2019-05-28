@@ -17,7 +17,7 @@
 <Image width="16" height="16" type="image/x-icon">https://citeseerx.ist.psu.edu/favicon.ico</Image>
 <Url type="text/html" method="POST" template="https://citeseerx.ist.psu.edu/search">
    <Param name="q" value="{searchTerms}"/>
-   <Param name="sort" value="rlv, cite, date, ascdate"/>
+   <Param name="sort" value="rlv"/>
    <Param name="t" value="doc"/>
 </Url>
 <moz:SearchForm>https://citeseerx.ist.psu.edu/</moz:SearchForm>
