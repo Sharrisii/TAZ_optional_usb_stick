@@ -68,7 +68,7 @@ trust 3
 # However, do change this data to your actual e-mail and user name in the .gitconfig file.
 # For github PGP: read how to use this at https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 # Also check whether a PGP key has been included to your github account (via web browser -> github.com -> your settings)
-# You do need to change any tokens in the .gitconfig file to the tokens you first need to make yourself via your github account.
+# Any tokens you have can also be set in the .gitconfig file
 cd /mnt/*/profiles/git
 cp -f .gitconfig /home/taz
 
