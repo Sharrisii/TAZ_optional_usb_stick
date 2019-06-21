@@ -9,7 +9,7 @@ The functions of the USB stick are the following:
 * load a user-set wallpaper color (!)
 * load a user-set screen resolution (!)
 * load a user-set keymap (!)
-* set the local timezone for the lxpanel clock
+* set the local timezone for the lxpanel clock, and fetch system time from a time server automatically
 * change some networking settings (!)
 * deactivate vesa and activate a different video driver (when using the custom boot setup 7)
 * load a customized openbox menu and openbox rc file (!), remove the menu button on lxpanel as this menubutton then becomes redundant (!)
