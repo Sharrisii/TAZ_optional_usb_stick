@@ -11,6 +11,10 @@ emerge --config sys-libs/timezone-data
 # see https://wiki.gentoo.org/wiki/Localization/Guide#Environment_variables_for_locales
 # and https://forums.gentoo.org/viewtopic-t-977540-start-0.html
 
+# Example code: auto-update the system clock using a time server
+# See also: https://wiki.gentoo.org/wiki/System_time , https://wiki.gentoo.org/wiki/Ntp
+rc-service ntp-client start
+
 # Example code: dhcpcd
 # Use this only if you need to set up your internet connection (ethernet modems generally don't need it, config of these are
 # done via browser by typing in the ip, ie 192.168.1.1)
