@@ -116,6 +116,6 @@ cp -f .gitconfig /home/taz
 
 # Example code: add support for multiple monitors
 # See https://wiki.gentoo.org/wiki/Xorg/Multiple_monitors
-# Run the code below:
+# Run the code below (change the files in /video_files manually as needed so it matches your monitors):
 # cp -f /mnt/*/video_files/41-dvi-monitor.conf /etc/X11/xorg.conf.d/
 # cp -f /mnt/*/video_files/42-hdmi-monitor.conf /etc/X11/xorg.conf.d/
