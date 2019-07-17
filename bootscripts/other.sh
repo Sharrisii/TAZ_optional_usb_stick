@@ -113,3 +113,9 @@ cp -f .gitconfig /home/taz
 ##Following line is only needed if you have a pci card and it doesn't work correctlyFollowing line is only needed if you have a pci card and it doesn't work correctly
 ##cp -f /mnt/*/video_files/10-pcimode.conf /etc/X11/xorg.conf.d/
 # You can run the commands glxinfo and glxgears after doing all this to see how well it performs now
+
+# Example code: add support for multiple monitors
+# See https://wiki.gentoo.org/wiki/Xorg/Multiple_monitors
+# Run the code below:
+# cp -f /mnt/*/video_files/41-dvi-monitor.conf /etc/X11/xorg.conf.d/
+# cp -f /mnt/*/video_files/42-hdmi-monitor.conf /etc/X11/xorg.conf.d/
