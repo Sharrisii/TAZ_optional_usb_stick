@@ -7,8 +7,8 @@
 
 dd if=/path/to/image.iso of=/dev/sdc bs=8192k
 
-# Uncomment the line below to make swap space on the usb stick (to increase your memory capacity; 
+# Uncomment the line below to make a swap file on the usb stick (to increase your memory capacity; 
 # especially useful if your machine lacks in this and you also don't have a regular hard drive in your machine)
-# To change the amount of swapspace (1000mb in the command), simply change the number.
-# The swapspace in activated at boot by another command at /bootscripts/other.sh 
+# To change the size of the swap file (1000mb in the command), simply change the number.
+# The swap file in activated at boot by another command at /bootscripts/other.sh 
 #mkfileswap /mnt/sdb2/swapspace_for_TAZ.swap 1000
