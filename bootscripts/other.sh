@@ -2,9 +2,9 @@
 # Place any other commands you still need in this file. This may include copying settings for gajim, linphone, claws-mail, ...
 # Also present here are the setting of the timezone of the lxpanel clock
 
-# Example code: activate swap space (on usb stick i.e. using the live_usb_creator script or 
-# on your hard disk -if you made swapspace on that using gparted-).
-# swapon /mnt/sdb2/swapspace_for_TAZ.swap
+# Example code: activate swap file (on usb stick i.e. using the live_usb_creator script)
+# If you instead already made a swap partition on your hard disk -using gparted- then no need to activate this as that is automatically activated..
+# swapon /mnt/sdb2/swapfile_for_TAZ.swap
 
 # Example code: setting of timezone for the lxpanel clock
 # To see available timezones: ls /usr/share/zoneinfo
