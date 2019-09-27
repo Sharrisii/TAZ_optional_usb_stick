@@ -28,12 +28,17 @@ rc-service ntp-client start
 # cd /mnt/*/networking/
 # cp -f dhcpcd.conf /etc/
 
-# Example code: temporary addresses
+# Example code: temporary ipv6 addresses
 # Use this only if you want to turn on ipv6 temporary addresses
 # cd /mnt/*/networking/
 # cp -f local.conf /etc/sysctl.d/
 # /etc/init.d/net.eth* restart
 # /etc/init.d/net.wlan* restart
+
+# Example code: temporary MAC addresses
+# Use this only if you want to turn on MAC temporary addresses (only last 3 digits get changed every 2 hours)
+# cd /mnt/*/networking/
+# cp -f net /etc/conf.d/
 
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
