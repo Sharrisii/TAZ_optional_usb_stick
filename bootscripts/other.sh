@@ -37,6 +37,7 @@ rc-service ntp-client start
 
 # Example code: temporary MAC addresses
 # Use this only if you want to turn on MAC temporary addresses (only last 3 digits get changed every 2 hours)
+# See https://wiki.gentoo.org/wiki/Handbook:X86/Full/Networking#MAC_address
 # cd /mnt/*/networking/
 # cp -f net /etc/conf.d/
 
