@@ -40,7 +40,7 @@ rc-service ntp-client start
 # See https://wiki.gentoo.org/wiki/Handbook:X86/Full/Networking#MAC_address
 # cd /mnt/*/networking/
 # cp -f net /etc/conf.d/
-# echo "0 */2 * * * /etc/init.d/net.xxx restart" >> "/var/spool/cron/crontabs/root"
+# echo "0 */2 * * * rc-service net.xxx restart" >> "/var/spool/cron/crontabs/root"
 
 # Example code: gajim
 # First, start gajim and enter the configuration settings for your messenger account(s)
