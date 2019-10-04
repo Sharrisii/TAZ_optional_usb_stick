@@ -28,7 +28,7 @@ rc-service ntp-client start
 # cd /mnt/*/networking/
 # cp -f dhcpcd.conf /etc/
 
-# Example code: code to create the paths to /etc/init.d/net.eth* and /etc/init.d/net.wlan*
+# Example code: code to create the paths to /etc/init.d/net.eth* and /etc/init.d/net.wlan*, needed for temporary IPv6 and MAC addresses
 # Note: to just get the network (ethernet) interface, you could also use ifconfig -s | grep -o "^e[a-z0-9]*"
 # ln -s /etc/init.d/net.lo /etc/init.d/net.$(ip link | cut -d " " -f 2 | grep -o "^e[a-z0-9]*")
 
