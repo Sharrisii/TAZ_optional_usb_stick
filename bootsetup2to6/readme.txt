@@ -1,1 +1,1 @@
-The standard bootsetups 2 to 6 ("archive2.squashfs" to "archive6.squashfs") are found here.
+The standard boot setups 2 to 6 are found here.
